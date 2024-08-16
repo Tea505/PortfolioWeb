@@ -6,7 +6,7 @@ body {
     background-color: #000000;
 }
 header {
-    background-color: #333;
+    background-color: rgb(6, 49, 104);
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -35,7 +35,11 @@ footer {
     background-color: #333;
     color: #fff;
 }
-
+img { 
+    max-width: 10%;
+    height: auto;
+    border-radius: 8px;
+}
 @media (max-width: 768px) {
     nav ul {
         display: block;
@@ -45,4 +49,57 @@ footer {
         display: block;
         margin: 10px 0;
     }
+}
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #24292e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.github-button img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.github-button:hover {
+    background-color: #333;
+}
+.project-card {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card .card-content {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card:hover .card-content {
+    opacity: 1;
+    transform: translateY(0);
 }
