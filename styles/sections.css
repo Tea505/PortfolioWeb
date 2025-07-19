@@ -1,20 +1,67 @@
-/** home section **/ 
-#home-section { 
-    background-color: rgb(6, 49, 104);
+.section { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
 }
-#home-section.show {
-  display: block;
-  opacity: 1;
+.section:nth-child(odd) {
+  background-color: #f5b5b5;
 }
 
-/** activities section **/ 
-#activities-section.show {
-  display: block;
-  opacity: 1;
+.section:nth-child(even) {
+  background-color: #b5d3f5;
+}
+
+#target-section {
+  background-color: #d1f5b5 !important;
+}
+
+section {
+  padding: 100px 20px;
+  background: #f5f5f5;
+}
+
+.section-content {
+  background: white;
+  padding: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 #activities-section {
-  display: none;
+  display: block;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
-#activities-hidden { 
-    display: none;
+
+#about-section { 
+  display: block;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+ 
+#projects-section { 
+  display: block;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
+}
+
+
+#skills-section {
+  display: block;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+ 
+#contact-section { 
+  display: block;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+ 

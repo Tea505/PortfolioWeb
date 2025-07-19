@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smooth Scroll Test</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      height: 100vh;
+      background: #1e1e1e;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .button {
+      padding: 1em 2em;
+      font-size: 1rem;
+      margin: 10px;
+      cursor: pointer;
+      background: #0077ff;
+      border: none;
+      color: white;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 100px 20px;
+      background: #f5f5f5;
+    }
+
+    .section-content {
+      background: white;
+      padding: 50px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .section-1 { background-color: #f5f5f5; }
+    .section-2 { background-color: #e8f0fe; }
+    .section-3 { background-color: #ffe4e1; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Site</h1>
+    <button class="button" onclick="scrollToSection('projects')">Projects</button>
+    <button class="button" onclick="scrollToSection('about')">About</button>
+    <button class="button" onclick="scrollToSection('contact')">Contact</button>
+  </header>
+
+  <section id="projects" class="section-1">
+    <div class="section-content">
+      <h2>Projects</h2>
+      <p>This is the projects section. Scrolls stop here properly.</p>
+    </div>
+  </section>
+
+  <section id="about" class="section-2">
+    <div class="section-content">
+      <h2>About</h2>
+      <p>This is the about section. More content goes here.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section-3">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <p>This is the contact section. Add a form or details here.</p>
+    </div>
+  </section>
+
+  <script>
+    function scrollToSection(id) {
+      const target = document.getElementById(id);
+      const yOffset = -30; // adjust this if your header covers it
+      const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
