@@ -1,0 +1,20 @@
+/** home section **/ 
+#home-section { 
+    background-color: rgb(6, 49, 104);
+}
+#home-section.show {
+  display: block;
+  opacity: 1;
+}
+
+/** activities section **/ 
+#activities-section.show {
+  display: block;
+  opacity: 1;
+}
+#activities-section {
+  display: none;
+}
+#activities-hidden { 
+    display: none;
+}
