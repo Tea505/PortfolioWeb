@@ -37,54 +37,54 @@ button:hover {
 
 /* Github button */ 
 .github-button {
-    align-items: center;
-    background-color: #24292e;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  align-items: center;
+  background-color: #24292e;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
     
-    color: white;
-    font-size: 16px;
-    gap: 8px;
-    border: none;
-    cursor: pointer;
+  color: white;
+  font-size: 16px;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
 }
 .github-button:hover {
-    background-color: #333;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  background-color: #333;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
 }
 .github-button img {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 
 /* linkedin button */ 
 .linkedin-button {
   align-items: center;
-    background-color: #24292e;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  background-color: #24292e;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
     
-    color: white;
-    font-size: 16px;
-    gap: 8px;
-    border: none;
-    cursor: pointer;
+  color: white;
+  font-size: 16px;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
 }
 .linkedin-button:hover {
-   background-color: #333;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  background-color: #333;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
 }
 .linkedin-button img {
   width: 24px;
@@ -94,25 +94,25 @@ button:hover {
 /* Gmail button */ 
 .gmail-button {
   align-items: center;
-    background-color: #24292e;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  background-color: #24292e;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
     
-    color: white;
-    font-size: 16px;
-    gap: 8px;
-    border: none;
-    cursor: pointer;
+  color: white;
+  font-size: 16px;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
 }
 .gmail-button:hover {
-   background-color: #333;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  background-color: #333;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
 }
 .gmail-button img {
   width: 26px;
