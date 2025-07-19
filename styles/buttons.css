@@ -1,0 +1,67 @@
+/* button styles */ 
+ button {
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+.button-container {
+  display: flex;
+  gap: 0; /* Removes spacing */
+  justify-content: center;
+}
+.button-container button {
+  margin: 0; /* Make sure there's no margin between them */
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: #1c80a8; /* change this for button bg color */
+  color: white;
+  border: none;
+}
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-container button:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.button-container button:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.button-container button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+/* Github button */ 
+.github-button {
+    align-items: center;
+    background-color: #24292e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    
+    color: white;
+    font-size: 16px;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.github-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.github-button img {
+    height: 24px;
+    width: 24px;
+}
