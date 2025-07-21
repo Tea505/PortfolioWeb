@@ -4,17 +4,6 @@
   justify-content: center;
   min-height: 300px;
 }
-.section:nth-child(odd) {
-  background-color: #f5b5b5;
-}
-
-.section:nth-child(even) {
-  background-color: #b5d3f5;
-}
-
-#target-section {
-  background-color: #d1f5b5 !important;
-}
 
 section {
   padding: 100px 20px;
@@ -30,37 +19,35 @@ section {
 }
 #activities-section {
   display: block;
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 #about-section { 
   display: block;
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
  
 #projects-section { 
   display: block;
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; 
 }
 
-
 #skills-section {
   display: block;
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
- 
 #contact-section { 
   display: block;
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
