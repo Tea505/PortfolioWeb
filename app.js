@@ -1,42 +1,3 @@
-function openModal(id) {
-  document.getElementById(id + '-modal').style.display = 'flex';
-}
-
-function closeModal(id) {
-  document.getElementById(id + '-modal').style.display = 'none';
-}
-
-function loadAboutSection() {
-  return fetch('externals/about.html')
-    .then(response => {
-      if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-      return response.text();
-    })
-    .then(html => {
-      document.getElementById('about-section').innerHTML = html;
-    })
-    .catch(error => {
-      console.error('Failed to load external HTML:', error);
-    });
-}
-
-['home', 'about', 'projects', 'activities', 'skills', 'contact'].forEach(key => {
-  const button = document.getElementById(`${key}Btn`);
-  const section = document.getElementById(`${key}-section`);
-
-  if (button && section) {
-    button.addEventListener('click', () => scrollToElement(section, 800));
-  }
-});
-
-window.addEventListener('DOMContentLoaded', () => {
-  loadAboutSection();
-});
-
-
-
-
-  /* AUTO SCROLL ANIMATION */
 function scrollToElement(element, duration = 1000) { 
   const targetPosition = element.offsetTop;
     const startPosition = window.pageYOffset;
@@ -60,3 +21,28 @@ function scrollToElement(element, duration = 1000) {
 
       requestAnimationFrame(animation);
 }
+
+document.querySelectorAll('.imageRow').forEach(row => {
+    row.style.display = 'flex';
+    row.style.flexWrap = 'wrap';
+    row.style.gap = '15px';
+    row.style.marginTop = '10px';
+
+    row.querySelectorAll('img').forEach(img => {
+      img.style.width = 'auto';
+      img.style.height = '60px';
+      img.style.borderRadius = '8px';
+      img.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+      img.style.cursor = 'pointer';
+
+      img.addEventListener('mouseenter', () => {
+        img.style.transform = 'scale(1.1)';
+        img.style.opacity = '0.8';
+      });
+
+      img.addEventListener('mouseleave', () => {
+        img.style.transform = 'scale(1)';
+        img.style.opacity = '1';
+      });
+    });
+  });
