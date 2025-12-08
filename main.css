@@ -57,7 +57,6 @@ h2 { margin-top: 50px; }
 
 @media (max-width: 768px) {
     .project-row { 
-        display: inline-flex; 
         flex-direction: column;
     }
 
@@ -65,7 +64,7 @@ h2 { margin-top: 50px; }
     also have the image move above the text rather than side by side */ 
     .project-img-container img {
         width: auto;
-        max-width: 210px; /* added this to fix margin on smaller screens */ 
+        max-width: 150px; /* added this to fix margin on smaller screens */ 
     }
 }
 
