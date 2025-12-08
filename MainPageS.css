@@ -1,0 +1,71 @@
+/* GLOBAL STYLES */
+html { 
+    scroll-behavior: smooth; 
+}
+
+body { 
+    padding-top: 100px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: #0d1117; 
+    color: #c9d1d9; 
+    max-width: 900px; 
+    margin:0  auto; 
+    padding: 20px 40px; 
+    line-height: 1.6;
+}
+
+/* NAVIGATION MENU */
+.navbar { 
+    position: sticky; 
+    width: auto;
+    color: white;
+    z-index: 1000; 
+}
+
+.navbar-container {
+    padding: 10px 20px; 
+}
+
+.social-links {
+    display: flex; 
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+    color: #58a6ff;
+    text-decoration: underline;
+}
+
+/* HEADERS */
+h1, h2, h3 { 
+    color: #58a6ff; 
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+}
+
+h1 { font-size: 2.5em; border-bottom: none; margin-top: 50px; }
+h2 { margin-top: 50px; }
+
+/* SECTIONS & TEXT */
+.section { margin-bottom: 40px; }
+.bio-text { font-size: 1.1em; color: #8b949e; }
+
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
