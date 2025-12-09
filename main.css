@@ -103,7 +103,6 @@ h2 {
   width: auto;
   color: white;
   z-index: 1000; 
-
 }
 
 .navbar::after { 
@@ -134,7 +133,7 @@ h2 {
 .social-links a {
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-left: 20px;
   font-weight: bold;
 
@@ -209,6 +208,7 @@ nav a:hover, nav a.active {
 /* DROPDOWN MENU  */
 .dropdown {
   top: 55px;
+  left: 0;
   position: sticky;
   display: inline-block;
   z-index: 10001;
@@ -381,6 +381,39 @@ nav a:hover, nav a.active {
   }
   .card-header-text .card-dates {
     font-size: 0.85rem;
+  }
+
+  .dropdown {
+    position: fixed; 
+    top: 10px;
+    left: 10px;
+    width: auto;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    top: 40px; 
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Show dropdown when active */
+  .dropdown.active .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  #Tauha {
+    font-size: 2rem; 
+    margin-right: 15px; 
+  }
+
+  #student {
+    font-size: 1rem;
+    margin-right: 15px;
   }
 }
 

@@ -46,3 +46,18 @@ document.querySelectorAll('.imageRow').forEach(row => {
       });
     });
   });
+
+  const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+  const dropdown = document.querySelector('.dropdown');
+
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      dropdown.classList.remove('active');
+    });
+  });
+
+  // Optional: toggle menu on button click
+  const dropbtn = document.querySelector('.dropbtn');
+  dropbtn.addEventListener('click', () => {
+    dropdown.classList.toggle('active');
+  });
