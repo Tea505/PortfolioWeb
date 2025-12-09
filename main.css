@@ -518,6 +518,12 @@ nav a:hover, nav a.active {
     width: auto;
   }
 
+  .social-links a {
+    margin-left: 20px !important;   
+    padding: 10px 8px !important;   
+    font-size: 0.9em;              
+  }
+
   .menu-text {
     display: none;
   }
