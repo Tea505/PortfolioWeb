@@ -22,30 +22,7 @@ function scrollToElement(element, duration = 1000) {
       requestAnimationFrame(animation);
 }
 
-document.querySelectorAll('.imageRow').forEach(row => {
-    row.style.display = 'flex';
-    row.style.flexWrap = 'wrap';
-    row.style.gap = '15px';
-    row.style.marginTop = '10px';
 
-    row.querySelectorAll('img').forEach(img => {
-      img.style.width = 'auto';
-      img.style.height = '60px';
-      img.style.borderRadius = '8px';
-      img.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
-      img.style.cursor = 'pointer';
-
-      img.addEventListener('mouseenter', () => {
-        img.style.transform = 'scale(1.1)';
-        img.style.opacity = '0.8';
-      });
-
-      img.addEventListener('mouseleave', () => {
-        img.style.transform = 'scale(1)';
-        img.style.opacity = '1';
-      });
-    });
-  });
 
   const dropdownLinks = document.querySelectorAll('.dropdown-content a');
   const dropdown = document.querySelector('.dropdown');
@@ -56,8 +33,25 @@ document.querySelectorAll('.imageRow').forEach(row => {
     });
   });
 
-  // Optional: toggle menu on button click
   const dropbtn = document.querySelector('.dropbtn');
   dropbtn.addEventListener('click', () => {
     dropdown.classList.toggle('active');
+  });
+
+  const btn = document.getElementById("dropdownBtn");
+  const menu = document.getElementById("dropdownMenu");
+
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menu.classList.toggle("active");
+  });
+
+  menu.querySelectorAll("a").forEach(item => {
+    item.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+
+  document.addEventListener("click", () => {
+    menu.classList.remove("active");
   });
