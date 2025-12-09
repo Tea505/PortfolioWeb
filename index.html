@@ -12,6 +12,15 @@
 
         <nav class="navbar"> 
             <div class="navbar-container"> 
+            <div class="dropdown"> 
+                <button class="dropbtn"> Menu ☰ </button>
+                <div class="dropdown-content">
+                    <a href="#about-section"> About Me </a>
+                    <a href="#experience-section"> Experience </a>
+                    <a href="#project-section"> Projects </a>
+                    <a href="#skills-section"> Skills </a>
+                </div>
+            </div>
             <div class="social-links">
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mtauha9@gmail.com&su=Let's%20Connect&body=Hi%20Tauha%2C%0A..."> Email </a>
                 <a href="https://github.com/Tea505"> Github </a>
@@ -20,41 +29,85 @@
         </div>
         </nav>
 
+        <div class="Title">
         <header>
-            <h1 id="Tauha"> Muhammad Tauha </h1>
-        </header> 
+            <img src="assets/pfp.png" alt="pfp" title="Profile" class="pfp">
 
+            <div class="title-text"> 
+            <h1 id="Tauha"> Muhammad Tauha </h1>
+            <h5 id="student"> Student | Developer | Robotics Enthusiast </h5>
+            </div>
+        </header> 
+        </div>
+        
         <main id="main">
             <section id="about-section">
                 <h3>About Me</h3> 
-                <p> <!-- too much im this blah blah -->
+                <p> 
                     Hi, I'm currently a student at Borough of Manhattan Community College, expected to graduate in 
-                    2027. I'm a passionate student who loves robotics and writing clean, reusable code.
+                    December 2026. I'm a passionate student who loves robotics and writing clean, reusable code.
                     I enjoy working on projects that challenge my skills and allow me to learn new technologies.
                 </p> 
     
             </section>
 
-            <section id="experience-section">
-                <h3>Experience | Activities </h3>
-                    <div class="volunteer-card">
-                        <h5>NYC FIRST</h5>
-                        <h5> FIRST Technical Advisor (2024-Present) </h5>
-                        <p> Lead technical operations at official FIRST Robotics events, ensuring full compliance with safety, gameplay, and AV standards outlined by FIRST HQ.
-                            Oversaw venue infrastructure and AV system setup, collaborating with IT and facility teams to ensure competition readiness and technical integrity.
-                            Managed deployment, calibration, and teardown of the official FTC field, coordinating closely with FTAAs and Field Supervisors to maintain system accuracy and component reliability.
-                            Provided advanced diagnostics and real-time troubleshooting for robot communication, control system, and field hardware/software issues.
-                            Partnered with referees and scorekeepers to validate match data and resolve gameplay anomalies efficiently, ensuring accurate scoring and fair competition.
-                            Maintained close communication with FIRST and local partners to escalate and resolve critical issues, enabling seamless event execution.
-                            Supported event flow by assisting with field reset, team queuing, and match logistics when required..</p>
-                        <h5> FIRST Technical Advisor Assistant (2023-2024) </h5>
-                        <p> Supported the FTA in configuring and maintaining the FTC field electronics, network infrastructure, and control systems during regional and district events.
-                            Troubleshot robot-field communication issues (FMS, driver station, radio, etc.), ensuring teams maintained connectivity and system stability during matches.
-                            Provided on-site technical assistance to teams, guiding them through debugging processes, firmware updates, and hardware inspections.
-                            Collaborated with referees, scorekeepers, and the event management system (EMS) team to maintain synchronization between match data and real-time scoring.
-                            Assisted with the setup and validation of field sensors, control cabinets, and critical infrastructure prior to competition.
-                            Contributed to a collaborative and technically supportive environment, reinforcing FIRST values while optimizing competition reliability. </p>
+            <section id="work-section"> 
+                <h3> Work Experience </h3>
+                <div class="work-container"> 
+                <div class="work-card"> 
+                    <div class="work-header"> 
+                        <img src="assets/seamlessshifts.png" alt="Company Logo" class="card-logo">
+                        <div class="card-header-text">
+                    <h4> IT Specialist </h5>
+                        <span class="card-dates"> July 2024 — Present </span>
+                        </div>
                     </div>
+                    <div class="card-body">
+                        <ul> 
+                    <li> Configured and maintained 30+ workstation hardware, including structured wiring, cable management, and peripheral setup. </li>
+                    <li> Troubleshot and resolved network connectivity issues, improving system reliability and reducing downtime. </li>
+                    <li> Deployed and supported end-user hardware, such as dual-monitor configurations, docking stations, and input devices, ensuring seamless integration with enterprise systems. </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </section>
+
+            <section id="experience-section">
+                <h3>Volunteer Experience </h3>
+                <div class="volunteer-container">
+                    <div class="volunteer-card">
+                        <div class="volunteer-header"> 
+                        <img src="assets/NYCfirst.png" alt="Nonprofit Logo" class="card-logo">
+                        <div class="card-header-text">
+                        <h4>NYC FIRST</h5>
+                        <span class="card-dates"> Aug 2020 — Present </span>
+                        </div>
+                        </div>
+                        <h5> FIRST Technical Advisor | (Sept 2025 — Present) </h5>
+                         <div class="card-body"> 
+                        <ul>
+                            <li>Lead technical operations at official FIRST Robotics events, ensuring full compliance with safety, gameplay, and AV standards outlined by FIRST HQ.</li>
+                            <li>Oversaw venue infrastructure and AV system setup, collaborating with IT and facility teams to ensure competition readiness and technical integrity.</li>
+                            <li>Managed deployment, calibration, and teardown of the official FTC field, coordinating closely with FTAAs and Field Supervisors to maintain system accuracy and component reliability.</li>
+                            <li>Provided advanced diagnostics and real-time troubleshooting for robot communication, control system, and field hardware/software issues.</li>
+                            <li>Partnered with referees and scorekeepers to validate match data and resolve gameplay anomalies efficiently, ensuring accurate scoring and fair competition.</li>
+                            <li>Maintained close communication with FIRST and local partners to escalate and resolve critical issues, enabling seamless event execution.</li>
+                            <li>Supported event flow by assisting with field reset, team queuing, and match logistics when required.</li>
+                        </ul>
+                        <h5> FIRST Technical Advisor Assistant | (Sept 2023 — August 2025) </h5>
+                        </div> 
+                         <div class="card-body">
+                            <ul>
+                                <li>Supported the FTA in configuring and maintaining the FTC field electronics, network infrastructure, and control systems during regional and district events.</li>
+                                <li>Troubleshot robot-field communication issues (FMS, driver station, radio, etc.), ensuring teams maintained connectivity and system stability during matches.</li>
+                                <li>Provided on-site technical assistance to teams, guiding them through debugging processes, firmware updates, and hardware inspections.</li>
+                                <li>Collaborated with referees, scorekeepers, and the event management system (EMS) team to maintain synchronization between match data and real-time scoring.</li>
+                                <li>Assisted with the setup and validation of field sensors, control cabinets, and critical infrastructure prior to competition.</li>
+                                <li>Contributed to a collaborative and technically supportive environment, reinforcing FIRST values while optimizing competition reliability.</li>
+                            </ul>
+                        </div>
+                         </div>
     
             </section>
 
