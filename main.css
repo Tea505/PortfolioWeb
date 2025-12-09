@@ -258,6 +258,10 @@ nav a:hover, nav a.active {
   height: 200%;
 }
 
+.menu-text {
+  display: inline;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -484,6 +488,10 @@ nav a:hover, nav a.active {
   .project-info {
     text-align: center;        
   }
+
+  .menu-text {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -501,8 +509,11 @@ nav a:hover, nav a.active {
   .dropdown {
     position: absolute; /** maybe change to fixed if buggy **/ 
     top: 10px;
-    left: 10px;
     width: auto;
+  }
+
+  .menu-text {
+    display: none;
   }
 
   .dropdown-content {
