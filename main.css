@@ -485,6 +485,12 @@ nav a:hover, nav a.active {
       max-width: 400px; 
   }
 
+  .social-links a {
+    margin-left: 8px !important;   
+    padding: 6px 8px !important;   
+    font-size: 0.9em;              
+  }
+
   .project-info {
     text-align: center;        
   }
