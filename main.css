@@ -3,6 +3,11 @@ html {
   scroll-behavior: smooth; 
 }
 
+/** === Tweaks to still work on **/ 
+/* Mobile optimization for nav bar and dropdown menu */ 
+/* Switch out header sizing */ 
+/* dropdown menu bugged on mobile, needs Js incorporation to be fixed */ 
+
 body { 
   padding-top: 100px;
   font-family: 'Inter', 'Segoe UI', sans-serif;
