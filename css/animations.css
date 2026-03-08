@@ -1,0 +1,63 @@
+/* ============================= */
+/* PAGE TRANSITION SYSTEM */
+/* ============================= */
+#page-transition{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(135deg, #000000 0%, #fcefef 100%);
+  transform: translateY(-100%);
+  z-index:9999;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition: transform 0.8s ease;
+}
+
+#page-transition.active{
+  transform: translateY(0);
+}
+
+/* Loading bar */
+.transition-bar{
+  width:0%;
+  height:4px;
+  background:white;
+  position:absolute;
+  bottom:0;
+  left:0;
+  animation: loadingBar 0.8s ease forwards;
+}
+
+@keyframes loadingBar{
+  0%{width:0%;}
+  100%{width:100%;}
+}
+
+main.page-visible{
+  opacity:1;
+  transform: translateY(0);
+}
+
+#cursor-glow{
+  position: fixed;
+  width: 75px;
+  height: 75px;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+  pointer-events:none;
+  transform: translate(-50%, -50%);
+  z-index:-1;
+}
+
+.magnetic{
+  display:inline-block;
+  transition: transform 0.2s ease;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 rgba(110, 64, 201, 0.4); }
+  50% { box-shadow: 0 0 15px rgba(110, 64, 201, 0.7); }
+  100% { box-shadow: 0 0 0 rgba(110, 64, 201, 0.4); }
+} 

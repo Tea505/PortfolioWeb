@@ -1,46 +1,67 @@
 <!DOCTYPE html> 
 <html lang="en">
     <head> 
-        <div id="gradient-background"> </div>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Muhammad Tauha | Portfolio</title>
-        <link rel="stylesheet" href="main.css">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/projects.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
-    <body>
+
+    <body> 
+        <div id="gradient-background"> </div>
+
+        <div id="page-transition">
+            <div class="transition-bar"></div>
+        </div>
+
+        <div id="cursor-glow"></div>
 
         <nav class="navbar"> 
             <div class="navbar-container"> 
+                
             <div class="dropdown"> 
                 <button id="dropdownBtn" class="dropbtn"> <span class="menu-text">Menu </span> ☰ </button>
+
                 <div class="dropdown-content">
+                    <a href="explore.html" class="page-link"> Robotics Journey </a>
                     <a href="#about-section"> About Me </a>
-                    <a href="#experience-section"> Experience </a>
+                    <a href="#work-section"> Work Experience </a>
                     <a href="#project-section"> Projects </a>
                     <a href="#skills-section"> Skills </a>
                 </div>
             </div>
-            <div class="social-links">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mtauha9@gmail.com&su=Let's%20Connect&body=Hi%20Tauha%2C%0A..."> Email </a>
-                <a href="https://github.com/Tea505"> Github </a>
-                <a href="https://www.linkedin.com/in/muhammad-tauha-63ba73282/"> LinkedIn </a>
+
+                <div class="social-links">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mtauha9@gmail.com&su=Let's%20Connect&body=Hi%20Tauha%2C%0A..."> Email </a>
+                    <a href="https://github.com/Tea505"> Github </a>
+                    <a href="https://www.linkedin.com/in/muhammad-tauha-63ba73282/"> LinkedIn </a>
+                </div>
             </div>
-        </div>
+
         </nav>
 
+    <main id="main">
         <div class="Title">
         <header>
             <img src="assets/pfp.png" alt="pfp" title="Profile" class="pfp">
 
             <div class="title-text"> 
-            <h1 id="Tauha"> Muhammad Tauha </h1>
-            <h5 id="student"> Student | Developer | Robotics Enthusiast </h5>
+                <h1 id="Tauha"> Muhammad Tauha </h1>
+                <h5 id="student"> Student | Developer | Robotics Enthusiast </h5>
             </div>
+
         </header> 
         </div>
         
-        <main id="main">
             <section id="about-section">
                 <h3>About Me</h3> 
                 <p> 
@@ -48,69 +69,49 @@
                     December 2026. I'm a passionate student who loves robotics and writing clean, reusable code.
                     I enjoy working on projects that challenge my skills and allow me to learn new technologies.
                 </p> 
-    
             </section>
 
             <section id="work-section"> 
                 <h3> Work Experience </h3>
                 <div class="work-container"> 
+
+                <div class="work-card"> 
+                    <div class="work-header"> 
+                        <img src="assets/artbeyondsight.png" alt="Company Logo" class="card-logo">
+                            <div class="card-header-text">
+                                <h4> Drupal Developer | Website Design </h4>
+                                <h6> Art Beyond Sight | New York City, NY </h6>
+                            <span class="card-dates"> February 2026 — Present </span>
+                            </div>
+                        </div>
+                    <div class="card-body">
+                        <ul> 
+                            <li> Starting as a Drupal Developer and in progression to a Website Design role. </li>
+                            <!-- <li>  </li>
+                            <li>  </li> -->
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="work-card"> 
                     <div class="work-header"> 
                         <img src="assets/seamlessshifts.png" alt="Company Logo" class="card-logo">
-                        <div class="card-header-text">
-                    <h4> IT Specialist </h5>
-                        <span class="card-dates"> July 2024 — Present </span>
+                            <div class="card-header-text">
+                                <h4> IT Specialist </h4>
+                                <h6> Seamless shifts | New York City, NY </h6>
+                            <span class="card-dates"> July 2024 — Present </span>
+                            </div>
                         </div>
-                    </div>
                     <div class="card-body">
                         <ul> 
-                    <li> Configured and maintained 30+ workstation hardware, including structured wiring, cable management, and peripheral setup. </li>
-                    <li> Troubleshot and resolved network connectivity issues, improving system reliability and reducing downtime. </li>
-                    <li> Deployed and supported end-user hardware, such as dual-monitor configurations, docking stations, and input devices, ensuring seamless integration with enterprise systems. </li>
-                    </ul>
-                </div>
+                            <li> Configured and maintained 30+ workstation hardware, including structured wiring, cable management, and peripheral setup. </li>
+                            <li> Troubleshot and resolved network connectivity issues, improving system reliability and reducing downtime. </li>
+                            <li> Deployed and supported end-user hardware, such as dual-monitor configurations, docking stations, and input devices, ensuring seamless integration with enterprise systems. </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             </section>
-
-            <section id="experience-section">
-                <h3>Volunteer Experience </h3>
-                <div class="volunteer-container">
-                    <div class="volunteer-card">
-                        <div class="volunteer-header"> 
-                        <img src="assets/NYCfirst.png" alt="Nonprofit Logo" class="card-logo">
-                        <div class="card-header-text">
-                        <h4>NYC FIRST</h5>
-                        <span class="card-dates"> Aug 2020 — Present </span>
-                        </div>
-                        </div>
-                        <h5> FIRST Technical Advisor | (Sept 2025 — Present) </h5>
-                         <div class="card-body"> 
-                        <ul>
-                            <li>Lead technical operations at official FIRST Robotics events, ensuring full compliance with safety, gameplay, and AV standards outlined by FIRST HQ.</li>
-                            <li>Oversaw venue infrastructure and AV system setup, collaborating with IT and facility teams to ensure competition readiness and technical integrity.</li>
-                            <li>Managed deployment, calibration, and teardown of the official FTC field, coordinating closely with FTAAs and Field Supervisors to maintain system accuracy and component reliability.</li>
-                            <li>Provided advanced diagnostics and real-time troubleshooting for robot communication, control system, and field hardware/software issues.</li>
-                            <li>Partnered with referees and scorekeepers to validate match data and resolve gameplay anomalies efficiently, ensuring accurate scoring and fair competition.</li>
-                            <li>Maintained close communication with FIRST and local partners to escalate and resolve critical issues, enabling seamless event execution.</li>
-                            <li>Supported event flow by assisting with field reset, team queuing, and match logistics when required.</li>
-                        </ul>
-                        <h5> FIRST Technical Advisor Assistant | (Sept 2023 — August 2025) </h5>
-                        </div> 
-                         <div class="card-body">
-                            <ul>
-                                <li>Supported the FTA in configuring and maintaining the FTC field electronics, network infrastructure, and control systems during regional and district events.</li>
-                                <li>Troubleshot robot-field communication issues (FMS, driver station, radio, etc.), ensuring teams maintained connectivity and system stability during matches.</li>
-                                <li>Provided on-site technical assistance to teams, guiding them through debugging processes, firmware updates, and hardware inspections.</li>
-                                <li>Collaborated with referees, scorekeepers, and the event management system (EMS) team to maintain synchronization between match data and real-time scoring.</li>
-                                <li>Assisted with the setup and validation of field sensors, control cabinets, and critical infrastructure prior to competition.</li>
-                                <li>Contributed to a collaborative and technically supportive environment, reinforcing FIRST values while optimizing competition reliability.</li>
-                            </ul>
-                        </div>
-                         </div>
-    
-            </section>
-
 
             <section id="project-section">
                 <h3> Projects </h3>
@@ -160,8 +161,8 @@
                 </div>
             </section>
 
+            <h3> Skills </h3> 
             <section id="skills-section"> 
-                <h2> Skills </h2> 
                 <div class="skills-card">
                     <div class="imageRow">
                         <img src="assets/languages/css.png" alt="CSS" title="CSS">
@@ -170,12 +171,14 @@
                         <img src="assets/languages/javascript.png" alt="JavaScript" title="JavaScript">
                         <img src="assets/languages/python.png" alt="Python" title="Python">
                         <img src="assets/languages/kotlin.png" alt="Kotlin" title="Kotlin">
-
+                        <img src="assets/languages/cPlusPlus.png" alt="C++" title="C++">
+                        
                         <div class="spacer"> </div>
 
                         <img src="assets/intellij.jpg" alt="IntelliJ IDEA" title="IntelliJ IDEA">
                         <img src="assets/androidstudio.png" alt="Android Studio" title="Android Studio">
-                        <img src="assets/vscode.jpg" alt="VS Code" title="VS Code">
+                        <img src="assets/vscode.jpg" alt="VS Code" title="Visual Studio Code">
+                        <img src="assets/visualstudio.png" alt="VS" title="Visual Studio">
                         <img src="assets/git.png" alt="Git" title="Git">
                         <img src="assets/github.png" alt="GitHub" title="GitHub">
                     </div>
@@ -183,12 +186,13 @@
 
         </main>
     </body>
-
     
     <footer>
-        <p>&copy; 2025 Muhammad Tauha</p>
+        <p>&copy; 2026 Muhammad Tauha</p>
     </footer>
 
-    <script src="app.js"> </script>
+    <script src="js/app.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
 
 </html>

@@ -1,0 +1,81 @@
+/* Mobile Optimazation */
+@media (max-width: 768px) {
+  .project-card { 
+      flex-direction: column;
+  } 
+
+  .project-img-container img {
+      width: auto;
+      margin: 0 auto;
+      max-width: 400px; 
+  }
+
+  .social-links a {
+    margin-left: 8px !important;   
+    padding: 6px 8px !important;   
+    font-size: 0.9em;              
+  }
+
+  .project-info {
+    text-align: center;        
+  }
+
+  .menu-text {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .card-header-text h3 {
+    font-size: 1.2rem;
+  }
+  .card-header-text .card-dates {
+    font-size: 0.85rem;
+  }
+
+  .dropdown {
+    position: absolute; /** maybe change to fixed if buggy **/ 
+    top: 10px;
+    width: auto;
+  }
+
+  .social-links a {
+    margin-left: 20px !important;   
+    padding: 10px 8px !important;   
+    font-size: 0.9em;  /** might need to re-calculate the gap size here **/ 
+  }
+
+  .menu-text {
+    display: none;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    top: 40px; 
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Show dropdown when active */
+  .dropdown.active .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  #Tauha {
+    font-size: 2rem; 
+    margin-right: 15px; 
+  }
+
+  #student {
+    font-size: 1rem;
+    margin-right: 15px;
+  }
+}

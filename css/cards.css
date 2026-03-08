@@ -1,0 +1,120 @@
+.card-logo {
+  width: 70px;
+  height: 55px;
+  object-fit: fill;
+  border-radius: 8px;
+  border: 1px solid #2e2e2e;
+  background: #0d0d0d;
+  flex-shrink: 0;
+}
+
+.card-header-text {
+  margin-left: 15px;
+}
+
+.card-header-text h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.card-header-text .card-dates {
+  display: block;
+  font-size: 0.9rem;
+  color: #cfcfcf;
+  margin-top: 4px;
+}
+
+/* Volunteer Card */
+.volunteer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.volunteer-card {
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* Work Card */
+.work-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-card {
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.volunteer-header, .work-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.card-body p,
+.card-body ul {
+  color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.card-body ul {
+  padding-left: 20px;
+}
+
+/* SKILLS SECTION + ICONS */ 
+.spacer {
+  width: 100%;
+}
+
+img {     
+  width: auto;
+  height: 60px;
+  border-radius: 30%;
+  object-fit: cover;
+  border: 2px;
+}
+
+.imageRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.imageRow img {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.imageRow img:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+#skills-section { 
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  max-width: 100%;
+  min-width: 200px;;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+}
+
+.robotics-header-text {
+  margin-left: 0px;
+}
+
+.robotics-header-text .card-dates {
+  display: block;
+  font-size: 0.9rem;
+  color: #cfcfcf;
+  
+}

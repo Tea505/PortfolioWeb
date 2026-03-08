@@ -1,0 +1,131 @@
+/* PROJECT SECTION */
+#project-section {
+  text-align: center;
+}
+
+.project-row {
+  /* display: flexbox; */ 
+  justify-content: flex-start;
+  gap: 1rem; 
+  flex-wrap: wrap; 
+}
+
+.project-card {
+  
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  flex: 1 1 280px; 
+  max-width: 100%;
+  min-width: 200px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  transition: transform 0.2s ease;
+  transform-style: preserve-3d;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+#project-section h3 {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.project-img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.project-img-container img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+}
+
+.project-img-container:hover img {
+  transform: scale(1.1);
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-img-container:hover .overlay-text {
+  opacity: 1;
+}
+
+.project-info {
+  text-align: left;
+  color: #f7f7f7;
+  max-width: 1000px;
+}
+
+.project-info h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-info a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-info a:hover {
+  color: #000000;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: #fcefef;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.github-link:hover {
+  background-color: #fcefef;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(110, 64, 201, 0.3);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.github-link i {
+  transition: transform 0.3s ease;
+}
+
+.github-link:hover i {
+  transform: rotate(5deg) scale(1.2);
+}
+
+.github-link:hover {
+  animation: pulse 2s ease infinite;
+}
+
