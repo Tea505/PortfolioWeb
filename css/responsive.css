@@ -7,7 +7,7 @@
   .project-img-container img {
       width: auto;
       margin: 0 auto;
-      max-width: 400px; 
+      max-width: auto; 
   }
 
   .social-links a {
