@@ -1,13 +1,13 @@
 /* Mobile Optimazation */
 @media (max-width: 768px) {
   .project-card { 
-      flex-direction: column;
+    flex-direction: column;
   } 
 
   .project-img-container img {
-      width: auto;
-      margin: 0 auto;
-      max-width: auto; 
+    width: auto;
+    margin: 0 auto;
+    max-width: 250px; 
   }
 
   .social-links a {
@@ -35,6 +35,12 @@
   }
   .card-header-text .card-dates {
     font-size: 0.85rem;
+  }
+
+  .project-img-container img {
+    width: auto;
+    margin: 0 auto;
+    max-width: 250px; 
   }
 
   .dropdown {
