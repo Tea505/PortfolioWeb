@@ -45,13 +45,14 @@
 
   .dropdown {
     position: absolute; /** maybe change to fixed if buggy **/ 
-    top: 10px;
+    top: 30px;
     width: auto;
   }
 
   .social-links a {
-    margin-left: 20px !important;   
-    padding: 10px 8px !important;   
+    margin-top: 30px !important;
+    margin-left: 10px !important;   
+    padding: 5px 0px !important;   
     font-size: 0.9em;  /** might need to re-calculate the gap size here **/ 
   }
 
