@@ -3,7 +3,6 @@ html {
   scroll-behavior: smooth; 
 }
 
-/* Page fade animation */
 main{
   opacity:0;
   transform: translateY(10px);
@@ -99,9 +98,15 @@ h1 {
   margin-top: 50px; 
 }
 
-/* Set diff coloring for h5 */ 
 h5 { 
-
+  /* background: linear-gradient(90deg, #ff6b6b, #4ecdc4); <--testing gradient
+  text can be gradient colored I'll look into this later when deciding 
+  a final theme 
+  background: linear-gradient(350deg, #2e2e2e 0%, #fcefef 100%); 
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  */
 }
 
 h6, h4 { 
@@ -116,6 +121,50 @@ footer {
   text-align: center;
   margin: 50px 0;
 }
+
 .splitter { 
   margin-top: 25px;
+}
+
+.para-splitter {
+  margin: 25px 0;
+  border-top: 1px;
+  z-index: 1;
+}
+
+.journeyImg { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.journeyImg img { 
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 250px;
+  border-radius: 12px;
+  border: 1px solid #2e2e2e;
+}
+
+.studentImg { 
+  display: flex;
+  align-items: left;
+  gap: 15px;
+}
+
+.studentImg img { 
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 250px;
+  border-radius: 12px;
+  border: 1px solid #2e2e2e;
+}
+
+.studentImg img:hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform: scale(1.06);
+  cursor: pointer;
 }

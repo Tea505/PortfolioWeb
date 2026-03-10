@@ -23,9 +23,23 @@
   .menu-text {
     display: none;
   }
+
+  .studentImg { 
+    flex-direction: column;
+    display: flex;
+    align-items: left;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 600px) {
+  .studentImg { 
+    flex-direction: column;
+    display: flex;
+    align-items: left;
+    gap: 15px;
+  }
+
   .card-logo {
     width: 40px;
     height: 40px;
@@ -69,7 +83,6 @@
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
-  /* Show dropdown when active */
   .dropdown.active .dropdown-content {
     opacity: 1;
     transform: translateY(0);

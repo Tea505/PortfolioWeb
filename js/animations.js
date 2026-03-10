@@ -27,8 +27,6 @@ window.addEventListener("load", () => {
   },200);
 });
 
-
-/* magnetic button effect */
 document.querySelectorAll(".dropbtn, .social-links a").forEach(button => {
   button.addEventListener("mousemove", e => {
 
@@ -44,7 +42,6 @@ document.querySelectorAll(".dropbtn, .social-links a").forEach(button => {
   });
 });
 
-/* cursor glow */
 document.addEventListener("mousemove", e => {
 
   glow.style.left = e.clientX + "px";
