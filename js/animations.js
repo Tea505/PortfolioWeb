@@ -1,7 +1,40 @@
 const transition = document.getElementById("page-transition");
 const glow = document.getElementById("cursor-glow");
+const loader = document.getElementById("loader");
 
-/** Page Transition */
+const navType = performance.getEntriesByType("navigation")[0].type;
+
+if (loader) { 
+  if (sessionStorage.getItem("visited") && navType !== "reload") {
+    loader.style.display = "none";
+    } else {
+      sessionStorage.setItem("visited", "true");
+
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          loader.style.opacity = "0";
+            setTimeout(() => {
+          loader.style.display = "none";
+        }, 400);
+      }, 2500);
+    });
+  }
+}
+
+// window.addEventListener("load", () => {
+//     const loader = document.getElementById("loader");
+
+//     // optimize delay for smoothness  
+//     setTimeout(() => {
+//       loader.style.opacity = "0";
+//       loader.style.pointerEvents = "none";
+
+//       setTimeout(() => {
+//         loader.style.display = "none";
+//       }, 400);
+//     }, 2500);
+//   });
+
 document.querySelectorAll("a[href]").forEach(link => {
   const url = link.getAttribute("href");
 
@@ -15,7 +48,7 @@ document.querySelectorAll("a[href]").forEach(link => {
 
     setTimeout(()=>{
       window.location.href = destination;
-    },1000);
+    },300);
   });
 });
 
@@ -31,8 +64,8 @@ document.querySelectorAll(".dropbtn, .social-links a").forEach(button => {
   button.addEventListener("mousemove", e => {
 
     const rect = button.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width/2;
-    const y = e.clientY - rect.top - rect.height/2;
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
 
     button.style.transform = `translate(${x*0.15}px, ${y*0.15}px)`;
   });
@@ -48,7 +81,6 @@ document.addEventListener("mousemove", e => {
   glow.style.top = e.clientY + "px";
 });
 
-/* 3D tilt for project cards */
 document.querySelectorAll(".project-card").forEach(card => {
 
   card.addEventListener("mousemove", e => {

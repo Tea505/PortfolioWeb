@@ -21,7 +21,7 @@
 }
 
 .navbar-container {
-  padding: 10px 20px; 
+  padding-bottom: 15px; 
 }
 
 .social-links {
@@ -108,15 +108,13 @@ nav a:hover, nav a.active {
 
 /* DROPDOWN MENU  */
 .dropdown {
-  top: 55px;
-  left: 0;
-  position: sticky;
+  position: absolute;
   display: inline-block;
   z-index: 10001;
 }
 
 .dropbtn {
-  background: linear-gradient(135deg, #2e2e2e 0%, #fcefef 100%);
+  background-color: transparent;
   color: white;
   border: none;
   font-size: 1.1rem;
@@ -125,7 +123,7 @@ nav a:hover, nav a.active {
   padding: 10px 15px;
   transition: all 0.3s;
   border-radius: 8px;
-  position: relative;
+  position: sticky;
   overflow: hidden;
 }
 
@@ -159,8 +157,6 @@ nav a:hover, nav a.active {
   display: inline;
 }
 
-
-
 .dropdown.active { 
   display: block;
 }
@@ -172,11 +168,6 @@ nav a:hover, nav a.active {
 
   box-shadow: 0 4px 20px rgba(220, 200, 255, 0.3);
 }
-
-/**
-.dropdown:hover .dropdown-content {
-  display: block;
-} this is buggy in mobile   **/ 
 
 .dropdown-content::after {
   content: "";

@@ -2,7 +2,6 @@ const btn = document.getElementById("dropdownBtn");
 const dropdown = document.querySelector(".dropdown");
 const menu = document.querySelector(".dropdown-content");
 
-
 btn.addEventListener("click", (e) => {
   e.stopPropagation();
   dropdown.classList.toggle("active");
@@ -18,9 +17,8 @@ document.addEventListener("click", () => {
   dropdown.classList.remove("active");
 });
 
-/* ------ MOBILE SWIPE CLOSE ------ */
+/* ------ close on mobile swipe ------ */
 let startY = 0;
-
 document.addEventListener("touchstart", (e) => {
   startY = e.touches[0].clientY;
 });

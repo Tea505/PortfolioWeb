@@ -6,7 +6,6 @@
         <title> Robotics Journey</title>
 
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/cards.css">
         <link rel="stylesheet" href="css/projects.css">
@@ -25,15 +24,26 @@
 
         <div id="cursor-glow"></div>
 
+        <div id="page"> 
+
+        <!-- this animation doesnt work yet -->
+        <div id="loader">
+            <lottie-player 
+                src="animations/pageTransition.json" 
+                background="linear-gradient(135deg, #000000 0%, #fcefef 100%)"
+                autoplay>
+            </lottie-player>
+        </div>
+
         <nav class="navbar"> 
             <div class="navbar-container"> 
             
             <div class="dropdown"> 
                 <button id="dropdownBtn" class="dropbtn"> <span class="menu-text">Menu </span> ☰ </button>
                 <div class="dropdown-content">
-                    <a href="index.html" class="page-link"> Home Page </a>
-                    <a href="#volunteer-experience-section"> Volunteering </a>
-                    <a href="#Mentor-section"> Mentorship </a>
+                    <a href="index.html" class="page-link"> Home </a>
+                    <a href="projects.html" class="page-link"> Projects </a>
+                    <a href="explore.html" class="page-link"> Robotics </a>
                 </div>
             </div>
 
@@ -190,11 +200,11 @@
                                     </div>
 
                                     <p> Mentored a rookie FTC team, providing foundational guidance on robot design, programming, 
-                                        and competition strategy to help them successfully navigate their first season.</p>
+                                        and competition strategy to help them successfully navigate their seasons.</p>
                                     
                                     <div class="journeyImg" > 
                                         <div class="imageRow"> 
-                                            <img src="assets/Mentor/EE Mentor PIC.jpg" alt="FTC 23983" class="volunteer-image">
+                                            <img src="assets/Mentor/EE-Mentor-PIC.jpg" alt="FTC 23983" class="volunteer-image">
                                         </div>    
                                     </div>
                         </div>
@@ -213,4 +223,5 @@
     <script src="js/navbar.js"></script>
     <script src="js/animations.js"></script>
 
+    </div>
 </html>

@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth; 
 }
 
-main{
+main {
   opacity:0;
   transform: translateY(10px);
   transition: opacity 0.9s ease, transform 0.9s ease;

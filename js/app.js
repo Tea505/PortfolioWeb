@@ -1,5 +1,4 @@
-
-/* Does not work -- Need fixing.
+/* 
   function scrollToElement(element, duration = 1000) { 
   const targetPosition = element.offsetTop;
     const startPosition = window.pageYOffset;
@@ -23,3 +22,4 @@
 
       requestAnimationFrame(animation);
 } */
+

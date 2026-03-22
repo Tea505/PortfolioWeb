@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    </head>
+
+    <body> 
+        <div id="gradient-background"> </div>
+
+        <div id="page-transition">
+            <div class="transition-bar"></div>
+        </div>
+
+        <div id="cursor-glow"></div>
+
+        <!-- this animation doesnt work yet -->
+        <div id="loader">
+            <lottie-player 
+                src="animations/pageTransition.json" 
+                background="linear-gradient(135deg, #000000 0%, #fcefef 100%)"
+                autoplay>
+            </lottie-player>
+        </div>
+
+        <nav class="navbar"> 
+            <div class="navbar-container"> 
+            
+            <div class="dropdown"> 
+                <button id="dropdownBtn" class="dropbtn"> <span class="menu-text">Menu </span> ☰ </button>
+                <div class="dropdown-content">
+                    <a href="index.html" class="page-link"> Home </a>
+                    <a href="projects.html" class="page-link"> Projects </a>
+                    <a href="explore.html" class="page-link"> Robotics </a>
+                    
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mtauha9@gmail.com&su=Let's%20Connect&body=Hi%20Tauha%2C%0A..."> Email </a>
+                <a href="https://github.com/Tea505"> Github </a>
+                <a href="https://www.linkedin.com/in/muhammad-tauha-63ba73282/"> LinkedIn </a>
+            </div>
+            </div>
+        </nav>
+
+        <main id="main"> 
+
+            <h2> Projects </h2>
+
+            <section id="project-section">
+                <div class="project-row"> 
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="assets/projects/tealib.png" alt="TeaLib">
+                            <div class="overlay-text">TeaLib</div>
+                        </div>
+                    <div class="project-info">
+                        <h4>TeaLib</h4>
+                            <p> A library that simplifies common tasks and provides utility functions for developers in First Tech Challenge.</p>
+                            <a href="https://github.com/Tea505/TeaLib" class="github-link" target="_blank">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="assets/projects/swerveSim.png" alt="SwerveSim">
+                            <div class="overlay-text">Swerve Sim</div>
+                        </div>
+                    <div class="project-info">
+                        <h4>2D Swerve Simulator </h4>
+                            <p> A lightweight simulator that visualizes 2D swerve drive motion using Python, ideal for testing control logic and learning kinematics.</p>
+                            <a href="https://github.com/Tea505/SwervePYsim"  class="github-link" target="_blank"> 
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="assets/projects/centerstage.png" alt="9384-CenterStage">
+                            <div class="overlay-text">CenterStage</div>
+                        </div>
+                    <div class="project-info">
+                        <h4>FTC-9384 CenterStage </h4>
+                            <p> Official code for Team 9384 Hydraulic Hydras robot for CenterStage in First Tech Challenge.</p>
+                            <a href="https://github.com/Tea505/FTC-9384-CenterStage" class="github-link" target="_blank">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img-container">
+                            <img src="assets/projects/InToTheDeep.png" alt="9384-CenterStage">
+                            <div class="overlay-text">Into The Deep </div>
+                        </div>
+                    <div class="project-info">
+                        <h4>FTC-8088 Into The Deep </h4>
+                            <p> Official code for Team 8088 Cephalopods robot for Into The Deep in First Tech Challenge.</p>
+                            <a href="https://github.com/Tea505/FTC-8088-IntoTheDeep" class="github-link" target="_blank">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+
+            
+
+        </main>
+
+    </body>
+
+    <footer>
+        <p>&copy; 2026 Muhammad Tauha</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/animations.js"></script>
+
+</html>

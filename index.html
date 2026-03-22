@@ -3,10 +3,9 @@
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Muhammad Tauha | Portfolio</title>
+        <title> Muhammad Tauha </title>
 
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/cards.css">
         <link rel="stylesheet" href="css/projects.css">
@@ -25,6 +24,16 @@
 
         <div id="cursor-glow"></div>
 
+        <div id="mainPage"> 
+
+        <div id="loader">
+            <lottie-player 
+                src="animations/mainPage.json" 
+                background="linear-gradient(135deg, #000000 0%, #fcefef 100%)"
+                autoplay>
+            </lottie-player>
+        </div>
+
         <nav class="navbar"> 
             <div class="navbar-container"> 
                 
@@ -32,11 +41,9 @@
                 <button id="dropdownBtn" class="dropbtn"> <span class="menu-text">Menu </span> ☰ </button>
 
                 <div class="dropdown-content">
-                    <a href="explore.html" class="page-link"> Robotics Journey </a>
-                    <a href="#about-section"> About Me </a>
-                    <a href="#work-section"> Work Experience </a>
-                    <a href="#project-section"> Projects </a>
-                    <a href="#skills-section"> Skills </a>
+                    <a href="index.html" class="page-link"> Home </a>
+                    <a href="projects.html" class="page-link"> Projects </a>
+                    <a href="explore.html" class="page-link"> Robotics </a>
                 </div>
             </div>
 
@@ -49,11 +56,12 @@
 
         </nav>
 
-    <main id="main">
+    <main id="main">   
+
         <div class="Title">
         <header>
             <img src="assets/pfp.png" alt="pfp" title="Profile" class="pfp">
-
+            
             <div class="title-text"> 
                 <h1 id="Tauha"> Muhammad Tauha </h1>
                 <h5 id="student"> Student | Developer | Robotics Enthusiast </h5>
@@ -61,15 +69,15 @@
 
         </header> 
         </div>
-        
-            <section id="about-section">
-                <h3>About Me</h3> 
-                <p> 
-                    Hi, I'm currently a student at Borough of Manhattan Community College, expected to graduate in 
-                    December 2026. I'm a passionate student who loves robotics and writing clean, reusable code.
-                    I enjoy working on projects that challenge my skills and allow me to learn new technologies.
-                </p> 
-            </section>
+
+         <h3> About Me </h3>
+
+            <section class="aboutme-section"> </section> 
+                <div class="aboutme-card"> 
+                    <p>  Hi, I'm currently a student at Borough of Manhattan Community College, expected to graduate in 
+                    Spring of 2027. I'm a passionate student who loves robotics and writing clean, reusable code.
+                    I enjoy working on projects that challenge my skills and allow me to learn new technologies. </p>
+                </div>
 
             <section id="work-section"> 
                 <h3> Work Experience </h3>
@@ -87,8 +95,6 @@
                     <div class="card-body">
                         <ul> 
                             <li> Starting as a Drupal Developer and in progression to a Website Design role. </li>
-                            <!-- <li>  </li>
-                            <li>  </li> -->
                         </ul>
                     </div>
                 </div>
@@ -111,70 +117,77 @@
                     </div>
                 </div>
             </div>
-            </section>
 
-            <section id="project-section">
-                <h3> Projects </h3>
-                <div class="project-row"> 
-                    <div class="project-card">
-                        <div class="project-img-container">
-                            <img src="assets/projects/tealib.png" alt="TeaLib">
-                            <div class="overlay-text">TeaLib</div>
+            <h3> Regular Experience </h3>
+            <div class="work-container"> 
+                <div class="work-card"> 
+                    <div class="work-header"> 
+                        <img src="assets/homedepot.jpg" alt="Company Logo" class="card-logo">
+                            <div class="card-header-text">
+                                <h4> Sales Associate | Reach Driver </h4>
+                                <h6> Home Depot | Brooklyn, NY </h6>
+                            <span class="card-dates"> August 2024 — Present </span>
+                            </div>
                         </div>
-                    <div class="project-info">
-                        <h4>TeaLib</h4>
-                            <p> A library that simplifies common tasks and provides utility functions for developers in First Tech Challenge.</p>
-                            <a href="https://github.com/Tea505/TeaLib" class="github-link" target="_blank">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
+                    <div class="card-body">
+                        <ul> 
+                            <li> Maintain up-to-date knowledge of product offerings, promotions, and department-specific details to help customers make informed decisions.</li>
+                            <li> Monitor and manage inventory levels by restocking, organizing, and assisting with inventory checks. </li>
+                            <li> Work collaboratively with other associates to achieve sales goals and maintain a positive shopping environment. </li>
+                            <li> Fully licensed to operate the Reach machine to transport and move around merchandise. </li>
+                        </ul>
                     </div>
-    
-                    <div class="project-card">
-                        <div class="project-img-container">
-                            <img src="assets/projects/swerveSim.png" alt="SwerveSim">
-                            <div class="overlay-text">Swerve Sim</div>
-                        </div>
-                    <div class="project-info">
-                        <h4>2D Swerve Simulator </h4>
-                            <p> A lightweight simulator that visualizes 2D swerve drive motion using Python, ideal for testing control logic and learning kinematics.</p>
-                            <a href="https://github.com/Tea505/SwervePYsim"  class="github-link" target="_blank"> 
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="project-card">
-                        <div class="project-img-container">
-                            <img src="assets/projects/centerstage.png" alt="9384-CenterStage">
-                            <div class="overlay-text">CenterStage</div>
-                        </div>
-                    <div class="project-info">
-                        <h4>FTC-9384 CenterStage </h4>
-                            <p> Official code for Team 9384 Hydraulic Hydras robot for CenterStage in First Tech Challenge.</p>
-                            <a href="https://github.com/Tea505/FTC-9384-CenterStage" class="github-link" target="_blank">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-img-container">
-                            <img src="assets/projects/InToTheDeep.png" alt="9384-CenterStage">
-                            <div class="overlay-text">Into The Deep </div>
-                        </div>
-                    <div class="project-info">
-                        <h4>FTC-8088 Into The Deep </h4>
-                            <p> Official code for Team 8088 Cephalopods robot for Into The Deep in First Tech Challenge.</p>
-                            <a href="https://github.com/Tea505/FTC-8088-IntoTheDeep" class="github-link" target="_blank">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                        </div>
-                    </div>
-    
                 </div>
+            </div>
             </section>
 
+            <div class="education-header">  
+                <h2> Education </h2>
+            </div>
+            <div class="education-section"> 
+
+                <div class="education-card">
+                    <h3> Borough Of Manhattan Community College </h3>
+                    <h4> Associate of Science in Computer Science </h4>
+                    <span class="edu-card-dates"> 2025 - 2027 </span>
+                    
+                    <span class="GPA"> GPA: 4.0 </span>
+                    <p> Fall 2025 Dean's List Award </p>
+
+                    <div class="courses-card"> 
+                    <h4> Related Courses taken </h4>
+                    <ul>
+                        <li> CSC 101 - Principles In Info Tech & Computers </li>
+                        <li> CSC 103 - Introduction to Data Analytics </li>
+                        <li> CSC 111 - Introduction to Programming and C++ </li>
+                        <li> MAT 206 - Precalculus </li>
+                        <li> MAT 301 - Analytic Geometry and Calculus I </li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="education-card">
+                    <h3> John Dewey High School </h3>
+                    <h4> High School Diploma </h4>
+                    <span class="edu-card-dates"> 2020 - 2024 </span>
+
+                    <span class="GPA"> GPA: 3.5 </span>
+                    <p> Recieved a certificate for Excellence in Robotics Programming and Coding </p>
+                    
+                    <div class="courses-card"> 
+                    <h4> Related Courses taken </h4>
+                    <ul>
+                        <li> Introduction to Robotics </li>
+                        <li> Advanced Robotics </li>
+                        <li> Robotics Engineering </li>
+                        <li> AP Physics </li>
+                        <li> AP Computer Science Java </li>
+                    </ul>
+                    </div>   
+                </div>
+
+            </div>
+            
             <h3> Skills </h3> 
             <section id="skills-section"> 
                 <div class="skills-card">
@@ -205,8 +218,10 @@
         <p>&copy; 2026 Muhammad Tauha</p>
     </footer>
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="js/app.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/animations.js"></script>
 
+    </div>
 </html>

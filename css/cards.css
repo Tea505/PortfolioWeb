@@ -116,5 +116,56 @@ img {
   display: block;
   font-size: 0.9rem;
   color: #cfcfcf;
-  
+}
+
+.aboutme-section { 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutme-card { 
+  border-radius: 12px;
+  padding: 15px 20px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/** Education Cards */ 
+.education-section { 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* for future referencing placing this here <-- to be worked 
+/* .education-section > *:nth-child(3) {
+  grid-column: span 2;   
+  justify-self: center;  
+  width: 55%;            
+} */
+
+.education-card h3 { 
+  margin-top: 0px;
+}
+
+.education-card { 
+  border-radius: 12px;
+  padding: 15px 20px;
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.GPA { 
+  display: block;
+  font-size: 0.9rem;
+  color: #cfcfcf;
+  margin-top: 0px;
+}
+
+.courses-card ul { 
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
