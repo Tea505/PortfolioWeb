@@ -1,4 +1,5 @@
 const transition = document.getElementById("page-transition");
+const transitionPlayer = document.getElementById("page-transition-player");
 const glow = document.getElementById("cursor-glow");
 const loader = document.getElementById("loader");
 
@@ -21,34 +22,35 @@ if (loader) {
   }
 }
 
-// window.addEventListener("load", () => {
-//     const loader = document.getElementById("loader");
+document.querySelectorAll(".dropdown-content .page-link[href]").forEach(link => {
+  link.addEventListener("click", function (e) {
+    if (
+      e.defaultPrevented ||
+      e.button !== 0 ||
+      e.metaKey ||
+      e.ctrlKey ||
+      e.shiftKey ||
+      e.altKey
+    ) {
+      return;
+    }
 
-//     // optimize delay for smoothness  
-//     setTimeout(() => {
-//       loader.style.opacity = "0";
-//       loader.style.pointerEvents = "none";
-
-//       setTimeout(() => {
-//         loader.style.display = "none";
-//       }, 400);
-//     }, 2500);
-//   });
-
-document.querySelectorAll("a[href]").forEach(link => {
-  const url = link.getAttribute("href");
-
-  if(url.startsWith("#")) return;
-  if(url.startsWith("http")) return;
- 
-  link.addEventListener("click", function(e){
     e.preventDefault();
-    transition.classList.add("active");
+
     const destination = this.href;
 
-    setTimeout(()=>{
+    if (transition) {
+      transition.classList.add("active");
+    }
+
+    if (transitionPlayer) {
+      transitionPlayer.stop();
+      transitionPlayer.play();
+    }
+
+    setTimeout(() => {
       window.location.href = destination;
-    },300);
+    }, 1500);
   });
 });
 

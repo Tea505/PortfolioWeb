@@ -18,8 +18,11 @@
     <body> 
         <div id="gradient-background"> </div>
 
-        <div id="page-transition">
-            <div class="transition-bar"></div>
+        <div id="page-transition" aria-hidden="true">
+            <lottie-player
+                id="page-transition-player"
+                src="animations/pageTransition.json">
+            </lottie-player>
         </div>
 
         <div id="cursor-glow"></div>
