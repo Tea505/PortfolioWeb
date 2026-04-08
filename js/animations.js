@@ -1,107 +1,24 @@
-const transition = document.getElementById("page-transition");
-const transitionPlayer = document.getElementById("page-transition-player");
-const glow = document.getElementById("cursor-glow");
-const loader = document.getElementById("loader");
+/* 
+  function scrollToElement(element, duration = 1000) { 
+  const targetPosition = element.offsetTop;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
 
-const navType = performance.getEntriesByType("navigation")[0].type;
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      }
 
-if (loader) { 
-  if (sessionStorage.getItem("visited") && navType !== "reload") {
-    loader.style.display = "none";
-    } else {
-      sessionStorage.setItem("visited", "true");
+      function easeInOutQuad(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+      }
 
-      window.addEventListener("load", () => {
-        setTimeout(() => {
-          loader.style.opacity = "0";
-            setTimeout(() => {
-          loader.style.display = "none";
-        }, 400);
-      }, 2500);
-    });
-  }
-}
-
-document.querySelectorAll(".dropdown-content .page-link[href]").forEach(link => {
-  link.addEventListener("click", function (e) {
-    if (
-      e.defaultPrevented ||
-      e.button !== 0 ||
-      e.metaKey ||
-      e.ctrlKey ||
-      e.shiftKey ||
-      e.altKey
-    ) {
-      return;
-    }
-
-    e.preventDefault();
-
-    const destination = this.href;
-
-    if (transition) {
-      transition.classList.add("active");
-    }
-
-    if (transitionPlayer) {
-      transitionPlayer.stop();
-      transitionPlayer.play();
-    }
-
-    setTimeout(() => {
-      window.location.href = destination;
-    }, 1500);
-  });
-});
-
-window.addEventListener("load", () => {
-  const main = document.querySelector("main");
-
-  setTimeout(()=>{
-    main.classList.add("page-visible");
-  },200);
-});
-
-document.querySelectorAll(".dropbtn, .social-links a").forEach(button => {
-  button.addEventListener("mousemove", e => {
-
-    const rect = button.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width / 2;
-    const y = e.clientY - rect.top - rect.height / 2;
-
-    button.style.transform = `translate(${x*0.15}px, ${y*0.15}px)`;
-  });
-
-  button.addEventListener("mouseleave", () => {
-    button.style.transform = "translate(0,0)";
-  });
-});
-
-document.addEventListener("mousemove", e => {
-
-  glow.style.left = e.clientX + "px";
-  glow.style.top = e.clientY + "px";
-});
-
-document.querySelectorAll(".project-card").forEach(card => {
-
-  card.addEventListener("mousemove", e => {
-    const rect = card.getBoundingClientRect();
-
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = -(y - centerY) / 18;
-    const rotateY = (x - centerX) / 18;
-
-    card.style.transform =
-      `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
-  });
-
-  card.addEventListener("mouseleave", () => {
-    card.style.transform = "rotateX(0) rotateY(0)";
-  });
-});
+      requestAnimationFrame(animation);
+} */
