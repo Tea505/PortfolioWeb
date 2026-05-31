@@ -1,24 +1,23 @@
-/* 
-  function scrollToElement(element, duration = 1000) { 
-  const targetPosition = element.offsetTop;
-    const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
-    let startTime = null;
+const modal = document.getElementById("letterModal");
+const openBtn = document.getElementById("openLetterBtn");
+const closeBtn = document.querySelector(".close");
 
-      function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) requestAnimationFrame(animation);
-      }
+openBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+});
 
-      function easeInOutQuad(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-      }
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
 
-      requestAnimationFrame(animation);
-} */
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        modal.style.display = "none";
+    }
+});

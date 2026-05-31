@@ -51,11 +51,16 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-.volunteer-header, .work-header {
+.volunteer-header {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 12px;
+}
+
+.work-header { 
+  display: flex;
+  align-items: flex-start;
 }
 
 .card-body p,
