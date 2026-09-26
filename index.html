@@ -16,26 +16,7 @@
     </head>
 
     <body> 
-        <div id="gradient-background"> </div>
-
-        <div id="page-transition" aria-hidden="true">
-            <lottie-player
-                id="page-transition-player"
-                src="animations/pageTransition.json">
-            </lottie-player>
-        </div>
-
-        <div id="cursor-glow"></div>
-
-        <div id="mainPage"> 
-
-        <div id="loader">
-            <lottie-player 
-                src="animations/mainPage.json" 
-                background="linear-gradient(135deg, #000000 0%, #fcefef 100%)"
-                autoplay>
-            </lottie-player>
-        </div>
+        <div id="background"> </div>
 
         <nav class="navbar"> 
             <div class="navbar-container"> 
@@ -49,7 +30,6 @@
                     <a href="explore.html" class="page-link"> Robotics </a>
                 </div>
             </div>
-
                 <div class="social-links">
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mtauha9@gmail.com&su=Let's%20Connect&body=Hi%20Tauha%2C%0A..."> Email 
                         <i class="fas fa-envelope"></i>
@@ -60,7 +40,6 @@
                     </a>
                 </div>
             </div>
-
         </nav>
 
     <main id="main">   
@@ -73,7 +52,20 @@
                 <h1 id="Tauha"> Muhammad Tauha </h1>
                 <h5 id="student"> Student | Developer | Robotics Enthusiast </h5>
             </div>
-
+            <div class="player-wrapper">
+                <iframe 
+                    frameborder="0" 
+                    height="175" 
+                    width="100%" 
+                    title="Media player" 
+                    src="https://embed.music.apple.com/us/album/major-crimes/1540792622?i=1540793086&amp;itscg=30200&amp;itsct=music_box_player&amp;ls=1&amp;app=music&amp;mttnsubad=1540793086&amp;theme=auto" 
+                    id="embedPlayer" 
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" 
+                    allow="autoplay *; encrypted-media *; clipboard-write" 
+                    style="border: 0px; border-radius: 12px; width: 100%; height: 175px; max-width: 660px;">
+                </iframe>
+            </div>
+            
         </header> 
         </div>
 
@@ -129,99 +121,111 @@
                 </div>
             </div>
 
-            <!-- Should I keep this? Idk man -->
-            <h3> Regular Experience </h3>
-            <div class="work-container"> 
-                <div class="work-card"> 
-                    <div class="work-header"> 
-                        <img src="assets/homedepot.jpg" alt="Company Logo" class="card-logo">
-                            <div class="card-header-text">
-                                <h4> Sales Associate | Reach Driver </h4>
-                                <h6> Home Depot | Brooklyn, NY </h6>
-                            <span class="card-dates"> August 2024 - Present </span>
-                            </div>
+            <div class="work-card"> 
+                <div class="work-header"> 
+                    <img src="assets/homedepot.jpg" alt="Company Logo" class="card-logo">
+                        <div class="card-header-text">
+                            <h4> Sales Associate | Reach Driver </h4>
+                            <h6> Home Depot | Brooklyn, NY </h6>
+                        <span class="card-dates"> August 2024 - Present </span>
                         </div>
-                    <div class="card-body">
-                        <ul> 
-                            <li> Maintain up-to-date knowledge of product offerings, promotions, and department-specific details to help customers make informed decisions.</li>
-                            <li> Monitor and manage inventory levels by restocking, organizing, and assisting with inventory checks. </li>
-                            <li> Work collaboratively with other associates to achieve sales goals and maintain a positive shopping environment. </li>
-                            <li> Fully licensed to operate the Reach machine to transport and move around merchandise. </li>
-                        </ul>
                     </div>
+                <div class="card-body">
+                    <ul> 
+                        <li> Maintain up-to-date knowledge of product offerings, promotions, and department-specific details to help customers make informed decisions.</li>
+                        <li> Monitor and manage inventory levels by restocking, organizing, and assisting with inventory checks. </li>
+                        <li> Work collaboratively with other associates to achieve sales goals and maintain a positive shopping environment. </li>
+                        <li> Fully licensed to operate the Reach machine to transport and move around merchandise. </li>
+                    </ul>
                 </div>
             </div>
+            
             </section>
 
             <div class="education-header">  
-                <h2> Education </h2>
+                <h3> Education </h3>
             </div>
             <div class="education-section"> 
-
                 <div class="education-card">
-                    <h3> Borough Of Manhattan Community College </h3>
-                    <h4> Associate of Science in Computer Science </h4>
-                    <span class="edu-card-dates"> 2025 - 2027 </span>
-                    
-                    <!-- lowkey i might js enroll into honors society to make ts better -->
-                    <span class="GPA"> GPA: 4.0 </span>
-                    <p> Fall 2025 Dean's List Award </p>
+                    <div class="education-info">
+                    <div class="work-header"> 
+                        <img src="assets/bmcc-logo.jpg" alt="BMCC" class="card-logo">
+                        <div class="card-header-text">
+                            <h4> Associate of Science in Computer Science </h4>
+                            <h6> Borough Of Manhattan Community College | New York, NY </h6>
+                                <span class="dates" style="color: #cfc9c9; font-size: 0.85rem;"> August 2025 -  May 2027 </span>
+                                <span class="GPA"> GPA: 4.0 </span>
+                            </div>
+                        </div>
+                        <div class="awards">
+                            <p><strong>Awards:</strong> <br> Fall 2025 Dean's List  <br> Spring 2026 Dean's List </p>
+                        </div>
+                    </div>
 
-                    <div class="courses-card"> 
-                    <h4> Related Courses taken </h4>
-                    <ul>
-                        <li> CSC 111 - Introduction to Programming and C++ </li>
-                        <li> CSC 211 - Advanced Programming Techniques of C++ </li>
-                        <li> MAT 206 - Precalculus </li>
-                        <li> MAT 301 - Analytic Geometry and Calculus I </li>
-                        <li> MAT 302 - Analytic Geometry and Calculus II </li>
-                    </ul>
-                </div>
-                </div>
-
-                <div class="education-card">
-                    <h3> John Dewey High School </h3>
-                    <h4> High School Diploma </h4>
-                    <span class="edu-card-dates"> 2020 - 2024 </span>
-
-                    <span class="GPA"> GPA: 3.5 </span>
-                    <p> Recieved a certificate for Excellence in Robotics Programming and Coding </p>
-                    
-                    <div class="courses-card"> 
-                    <h4> Related Courses taken </h4>
-                    <ul>
-                        <li> Introduction to Robotics </li>
-                        <li> Advanced Robotics </li>
-                        <li> Robotics Engineering </li>
-                        <li> AP Physics </li>
-                        <li> AP Computer Science Java </li>
-                    </ul>
-                    </div>   
+                <div class="courses-side">
+                    <h4 id ="RC"> Related Courses </h4>
+                        <ul>
+                            <li> CSC 111 - Introduction to Programming and C++ </li>    
+                            <li> CSC 211 - Advanced Programming Techniques of C++ </li>
+                            <li> CSC 231 - Discrete Structures and Applications to Computer Science </li>
+                            <li> MAT 206 - Precalculus </li>
+                            <li> MAT 301 - Analytic Geometry and Calculus I </li>
+                            <li> MAT 302 - Analytic Geometry and Calculus II </li>
+                            <li> PHY 215 - University Physics I </li>
+                        </ul>
+                    </div>
                 </div>
 
+                <!-- <div class="education-card">
+                    <div class="education-info">
+                    <div class="work-header"> 
+                        <img src="assets/columbiaUni.png" alt="Columbia University" class="card-logo">
+                        <div class="card-header-text">
+                            <h4> Bachelors of Science in Computer Science </h4>
+                            <h6> Columbia University | New York, NY </h6>
+                                <span class="dates" style="color: #cfc9c9; font-size: 0.85rem;"> August 2027 -  May 2029 </span>
+                                <span class="GPA"> GPA: TBD </span>
+                            </div>
+                        </div>
+                        <div class="awards">
+                            <p><strong>Awards:</strong> <br>   <br>  </p>
+                        </div> 
+                    </div>
+
+                <div class="courses-side">
+                    <h4 id ="RC"> Related Courses </h4>
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div> -->
             </div>
             
             <h3> Skills </h3> 
             <section id="skills-section"> 
                 <div class="skills-card">
                     <div class="imageRow">
+                    <div class="languages"> <!-- TODO: Add more language icons, add a title saying "Programming Languages "-->
                         <img src="assets/languages/css.png" alt="CSS" title="CSS">
                         <img src="assets/languages/html.png" alt="HTML" title="HTML">
                         <img src="assets/languages/java.png" alt="Java" title="Java">
                         <img src="assets/languages/javascript.png" alt="JavaScript" title="JavaScript">
                         <img src="assets/languages/python.png" alt="Python" title="Python">
                         <img src="assets/languages/kotlin.png" alt="Kotlin" title="Kotlin">
-                        <img src="assets/languages/cPlusPlus.png" alt="C++" title="C++">
-                        
-                        <div class="spacer"> </div>
+                        <img src="assets/languages/cPlusPlus.png" alt="C++" title="C++">    
+                    </div>
 
+                    <div class="spacer"> </div>
+
+                    <div class="tools">  <!-- TODO: Add more tool icons, add a title saying "Development Tools "-->
                         <img src="assets/IDE/intellij.jpg" alt="IntelliJ IDEA" title="IntelliJ IDEA">
                         <img src="assets/IDE/androidstudio.png" alt="Android Studio" title="Android Studio">
                         <img src="assets/IDE/vscode.jpg" alt="VS Code" title="Visual Studio Code">
                         <img src="assets/IDE/visualstudio.png" alt="VS" title="Visual Studio">
                         <img src="assets/IDE/git.png" alt="Git" title="Git">
                         <img src="assets/IDE/github.png" alt="GitHub" title="GitHub">
-                    </div>
+                    </div>  
+                </div>
             </section>
 
         </main>
@@ -231,9 +235,8 @@
         <p>&copy; 2026 Muhammad Tauha</p>
     </footer>
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/animations.js"></script>
-    
 </html>

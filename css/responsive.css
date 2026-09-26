@@ -1,4 +1,3 @@
-/* Mobile Optimazation */
 @media (max-width: 768px) {
   .project-card { 
     flex-direction: column;
