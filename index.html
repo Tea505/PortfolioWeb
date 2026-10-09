@@ -10,41 +10,82 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
+    <script>
+      document.documentElement.classList.add("loading");
+      setTimeout(function () {
+        document.documentElement.classList.remove("loading");
+        var l = document.getElementById("loader");
+        if (l) l.remove();
+      }, 9000);
+    </script>
+    <noscript>
+      <style>
+        #loader {
+          display: none;
+        }
+        html.loading,
+        html.loading body {
+          overflow: auto;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
+    <div id="loader" aria-hidden="true">
+      <canvas></canvas>
+      <div class="lo-wrap">
+        <div class="lo-name"></div>
+        <div class="lo-pct"></div>
+      </div>
+    </div>
     <canvas id="bh" aria-hidden="true"></canvas>
     <canvas id="sky" aria-hidden="true"></canvas>
     <div id="cur"></div>
-    <div id="depth" aria-hidden="true"><i></i><b>Outer space</b></div>
+    <div id="depth" aria-hidden="true">
+      <i></i>
+      <b>Outer space</b>
+    </div>
     <header>
-      <a href="#top">Muhammad Tauha</a
-      ><button
+      <a href="#top">Muhammad Tauha</a>
+      <button
         id="menu"
         type="button"
         aria-label="Toggle menu"
         aria-expanded="false"
         aria-controls="nav"
       >
-        <span></span><span></span>
+        <span></span>
+        <span></span>
       </button>
       <nav id="nav">
-        <a href="#about">About</a><a href="#experience">Experience</a
-        ><a href="#education">Education</a><a href="#work">Projects</a><a href="#skills">Skills</a
-        ><a href="#volunteering">Volunteering</a><a href="#mentorship">Mentorship</a
-        ><a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#volunteering">Volunteering</a>
+        <a href="#mentorship">Mentorship</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
     <main id="top">
       <section>
-        <h1 id="name">Muhammad<br />Tauha</h1>
+        <h1 id="name">
+          Muhammad
+          <br />
+          Tauha
+        </h1>
         <p class="lead">
           Student, developer and robotics enthusiast based in New York City.
-          <span class="hm"
-            >Move your cursor to bend the light, click to feed it a star, drag to change the viewing
+          <span class="hm">
+            Move your cursor to bend the light, click to feed it a star, drag to change the viewing
             angle.
+          </span>
+          <span class="ht">Tap empty space to feed the black hole a star.</span>
         </p>
         <div class="btns">
-          <a class="btn" href="#work">See my work</a><a class="btn" href="#contact">Get in touch</a>
+          <a class="btn" href="#work">See my work</a>
+          <a class="btn" href="#contact">Get in touch</a>
         </div>
       </section>
       <section id="about">
@@ -58,9 +99,18 @@
           competition robots to websites to IT support.
         </p>
         <div class="stats">
-          <div><strong data-n="1157">0</strong>workstations configured</div>
-          <div><strong data-n="16">0</strong>robotics projects</div>
-          <div><strong data-n="3">0</strong>years in IT</div>
+          <div>
+            <strong data-n="1156">0</strong>
+            workstations configured
+          </div>
+          <div>
+            <strong data-n="16">0</strong>
+            robotics projects
+          </div>
+          <div>
+            <strong data-n="3">0</strong>
+            years in IT
+          </div>
         </div>
       </section>
       <section id="experience">
@@ -103,6 +153,116 @@
           </div>
         </div>
       </section>
+      <section id="work">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>TeaLib</h3>
+            <p>
+              A library that simplifies common tasks and provides utility functions for developers
+              in FIRST Tech Challenge.
+            </p>
+            <div class="tags">
+              <span>FTC</span>
+              <span>Library</span>
+            </div>
+            <a class="more" href="https://github.com/Tea505/TeaLib" target="_blank" rel="noopener">
+              View on GitHub
+            </a>
+          </article>
+          <article class="card">
+            <h3>2D Swerve Simulator</h3>
+            <p>
+              A lightweight simulator that visualizes 2D swerve drive motion in Python, ideal for
+              testing control logic and learning kinematics.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Simulation</span>
+              <span>Kinematics</span>
+            </div>
+            <a
+              class="more"
+              href="https://github.com/Tea505/SwervePYsim"
+              target="_blank"
+              rel="noopener"
+            >
+              View on GitHub
+            </a>
+          </article>
+          <article class="card">
+            <h3>FTC-9384 CenterStage</h3>
+            <p>
+              Official code for Team 9384 Hydraulic Hydras' robot for CenterStage in FIRST Tech
+              Challenge.
+            </p>
+            <div class="tags">
+              <span>FTC</span>
+              <span>Robotics</span>
+            </div>
+            <a
+              class="more"
+              href="https://github.com/Tea505/FTC-9384-CenterStage"
+              target="_blank"
+              rel="noopener"
+            >
+              View on GitHub
+            </a>
+          </article>
+          <article class="card">
+            <h3>FTC-8088 Into The Deep</h3>
+            <p>
+              Official code for Team 8088 Cephalopods' robot for Into The Deep in FIRST Tech
+              Challenge.
+            </p>
+            <div class="tags">
+              <span>FTC</span>
+              <span>Robotics</span>
+            </div>
+            <a
+              class="more"
+              href="https://github.com/Tea505/FTC-8088-IntoTheDeep"
+              target="_blank"
+              rel="noopener"
+            >
+              View on GitHub
+            </a>
+          </article>
+          <article class="card">
+            <h3>Project Access for All</h3>
+            <p>
+              An open-source national platform making arts and culture accessible to all, with a
+              community calendar of accessible events, an organization directory and news. I
+              contributed to building this website during my internship at Art Beyond Sight.
+            </p>
+            <div class="tags">
+              <span>Drupal</span>
+              <span>Web development</span>
+              <span>Accessibility</span>
+            </div>
+            <a
+              class="more"
+              href="https://www.projectaccessforall.org/"
+              target="_blank"
+              rel="noopener"
+            >
+              Visit the website
+            </a>
+          </article>
+          <article class="card">
+            <h3>Project Astra</h3>
+            <p>A 3D modeled game I'm currently developing using GDScript and C++ in Godot 4.7.</p>
+            <div class="tags">
+              <span>GDScript</span>
+              <span>GDShader</span>
+              <span>Godot</span>
+              <span>Blender</span>
+              <span>Git</span>
+              <span>C++</span>
+            </div>
+          </article>
+        </div>
+      </section>
       <section id="education">
         <h2>Education</h2>
         <div class="tl">
@@ -112,15 +272,18 @@
               <h3>Associate of Science in Computer Science</h3>
               <p class="org">Borough of Manhattan Community College</p>
               <ul>
-                <li>GPA: 4.0 </li>
+                <li>GPA: 4.0</li>
                 <li>Expected graduation: Spring 2027.</li>
-                <li> Honor Roll Student</li>
-                <li> Fall 2025 - 2026 Dean's List award.</li></li>
+                <li>Honor Roll Student</li>
+                <li>Fall 2025 - 2026 Dean's List award.</li>
               </ul>
               <div class="tags">
-                <span>CSC 231 Discrete Structures and Applications to Computer Science</span><span>215 Fundamentals of Computer Science</span
-                ><span>CSC 111 Programming &amp; C++</span> <span>CSC 231 Advancded Programming Techniques &amp; C++</span> <span>MAT 301 Calculus I</span
-                ><span>MAT 302 Calculus II</span>
+                <span>CSC 111 Programming &amp; C++</span>
+                <span>CSC 211 Advanced Programming Techniques &amp; C++</span>
+                <span>CSC 215 Fundamentals of Computer Science</span>
+                <span>CSC 231 Discrete Structures and Applications to Computer Science</span>
+                <span>MAT 301 Calculus I</span>
+                <span>MAT 302 Calculus II</span>
               </div>
             </article>
           </div>
@@ -134,112 +297,30 @@
                 <li>Received a certificate for Excellence in Robotics Programming and Coding.</li>
               </ul>
               <div class="tags">
-                <span>Intro to Robotics</span><span>Advanced Robotics</span
-                ><span>Robotics Engineering</span><span>AP Physics</span
-                ><span>AP Computer Science (Java)</span>
+                <span>Intro to Robotics</span>
+                <span>Advanced Robotics</span>
+                <span>Robotics Engineering</span>
+                <span>AP Physics</span>
+                <span>AP Computer Science (Java)</span>
               </div>
             </article>
           </div>
         </div>
       </section>
-      <section id="work">
-        <h2>Projects</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>TeaLib</h3>
-            <p>
-              A library that simplifies common tasks and provides utility functions for developers
-              in FIRST Tech Challenge.
-            </p>
-            <div class="tags"><span>FTC</span><span>Library</span><span>Java</span></div>
-            <a class="more" href="https://github.com/Tea505/TeaLib" target="_blank" rel="noopener"
-              >View on GitHub</a
-            >
-          </article>
-          <article class="card">
-            <h3>2D Swerve Simulator</h3>
-            <p>
-              A lightweight simulator that visualizes 2D swerve drive motion in Python, ideal for
-              testing control logic and learning kinematics.
-            </p>
-            <div class="tags">
-              <span>Python</span><span>Simulation</span><span>Kinematics</span>
-            </div>
-            <a
-              class="more"
-              href="https://github.com/Tea505/SwervePYsim"
-              target="_blank"
-              rel="noopener"
-              >View on GitHub</a
-            >
-          </article>
-          <article class="card">
-            <h3>FTC-9384 CenterStage</h3>
-            <p>
-              Official code for Team 9384 Hydraulic Hydras' robot for CenterStage in FIRST Tech
-              Challenge.
-            </p>
-            <div class="tags"><span>FTC</span><span>Robotics</span><span>Java</span></div>
-            <a
-              class="more"
-              href="https://github.com/Tea505/FTC-9384-CenterStage"
-              target="_blank"
-              rel="noopener"
-              >View on GitHub</a
-            >
-          </article>
-          <article class="card">
-            <h3>FTC-8088 Into The Deep</h3>
-            <p>
-              Official code for Team 8088 Cephalopods' robot for Into The Deep in FIRST Tech
-              Challenge.
-            </p>
-            <div class="tags"><span>FTC</span><span>Robotics</span><span>Java</span></div>
-            <div class="tags"><span>FTC</span><span>Robotics</span></div>
-            <a
-              class="more"
-              href="https://github.com/Tea505/FTC-8088-IntoTheDeep"
-              target="_blank"
-              rel="noopener"
-              >View on GitHub</a
-            >
-          </article>
-          <article class="card">
-            <h3>Project Access for All</h3>
-            <p>
-              An open-source national platform making arts and culture accessible to all, with a
-              community calendar of accessible events, an organization directory and news. I
-              contributed to building this website during my internship at Art Beyond Sight.
-            </p>
-            <div class="tags">
-              <span>Drupal</span><span>Web development</span><span>Accessibility</span>
-            </div>
-            <a
-              class="more"
-              href="https://www.projectaccessforall.org/"
-              target="_blank"
-              rel="noopener"
-              >Visit the website</a
-            >
-          </article>
-            <article class="card">
-            <h3>Project Astra</h3>
-            <p>
-               A 3D modeled game I'm currently developing using GDScript and C++ in Godot 4.7.
-            </p>
-            <div class="tags">
-              <span>GDScript</span><span>GDShader</span><span>Godot</span><span>Blender</span><span>Git</span><span>C++</span>
-            </div>
-          </article>
-        </div>
-      </section>
+
       <section id="skills">
         <h2>My orbit</h2>
         <p>
-          My skills orbit around a core stack of technologies and tools I use regularly.
+          Web technologies sit closest to the core, then languages, then tools. Hover a skill to see
+          it up close.
+        <p></p>
         </p>
         <div id="orbit">
-          <div class="core">Core<br />stack</div>
+          <div class="core">
+            Core
+            <br />
+            stack
+          </div>
         </div>
       </section>
       <section id="volunteering">
@@ -272,7 +353,7 @@
           </div>
           <div class="job">
             <article class="card">
-              <div class="when">September 2025 to present</div>
+              <div class="when">September 2025 to Present</div>
               <h3>Lead Robot Inspector</h3>
               <p class="org">NYC FIRST</p>
               <ul>
@@ -285,26 +366,6 @@
                   can compete.
                 </li>
                 <li>Train newer inspectors on safety, size and weight requirements.</li>
-              </ul>
-            </article>
-          </div>
-          <div class="job">
-            <article class="card">
-              <div class="when">September 2023 to present</div>
-              <h3>Robot Inspector</h3>
-              <p class="org">NYC FIRST</p>
-              <ul>
-                <li>
-                  Inspect robots at official events for safety, design and gameplay compliance.
-                </li>
-                <li>
-                  Check size, weight and component rules, and give teams clear feedback on any
-                  changes needed.
-                </li>
-                <li>
-                  Assess moving parts and electrical systems for safety, and keep accurate
-                  inspection records.
-                </li>
               </ul>
             </article>
           </div>
@@ -327,40 +388,39 @@
           </div>
           <div class="job">
             <article class="card">
-              <div class="when">September 2025 to March 2025</div>
-              <h3>Referee</h3>
+              <div class="when">September 2022 to present</div>
+              <h3>Event Roles</h3>
               <p class="org">NYC FIRST</p>
               <ul>
-                <li>Enforce FTC game rules during matches to keep competition fair and safe.</li>
                 <li>
-                  Work with scorekeepers to confirm match results and resolve gameplay questions.
+                  <strong>
+                    Robot Inspector
+                    <!-- <span>September 2023 to present</span> -->
+                  </strong>
+                  Inspect robots for safety, size, weight and gameplay compliance, and give teams
+                  clear feedback.
                 </li>
-                <li>Communicate rulings clearly to teams and event staff.</li>
-              </ul>
-            </article>
-          </div>
-          <div class="job">
-            <article class="card">
-              <div class="when">September 2023 to December 2023</div>
-              <h3>Master of Ceremonies</h3>
-              <p class="org">NYC FIRST</p>
-              <ul>
                 <li>
-                  Served as MC for the NYC FIRST FTC Qualifiers, keeping the audience engaged and
-                  the atmosphere lively.
+                  <strong>
+                    Referee
+                   <!--  <span>September 2025 - March 2026</span>-->
+                  </strong>
+                  Enforce FTC game rules during matches and work with scorekeepers to keep results
+                  accurate.
                 </li>
-              </ul>
-            </article>
-          </div>
-          <div class="job">
-            <article class="card">
-              <div class="when">September 2022 to September 2023</div>
-              <h3>Queuer</h3>
-              <p class="org">NYC FIRST</p>
-              <ul>
                 <li>
-                  Organized the flow of teams to the competition field, keeping transitions timely
-                  and orderly.
+                  <strong>
+                    Master of Ceremonies
+                  <!--   <span>September 2023 to December 2023</span> -->
+                  </strong>
+                  Hosted the NYC FIRST FTC Qualifiers and kept the audience engaged.
+                </li>
+                <li>
+                  <strong>
+                    Queuer
+                   <!--  <span>September 2022 to September 2023</span> -->
+                  </strong>
+                  Organized the flow of teams to the field so matches ran on time.
                 </li>
               </ul>
             </article>
@@ -376,8 +436,30 @@
         <div class="tl">
           <div class="job">
             <article class="card">
+              <div class="when">September 2025 to present</div>
+              <h3>Nest + M</h3>
+              <p class="org">FIRST Tech Challenge mentor</p>
+              <ul>
+                <li>
+                  Provided foundational guidance on robot design, programming and competition
+                  strategy to help them through their seasons.
+                </li>
+                <li>
+                  Started new programmers with Java basics and a first working driver-controlled
+                  program.
+                </li>
+              </ul>
+              <div class="tags">
+                <span>Electric Eagles (FTC 23983)</span>
+                
+              </div>
+            </article>
+          </div>
+          
+          <div class="job">
+            <article class="card">
               <div class="when">September 2024 to present</div>
-              <h3>FIRST Tech Challenge Mentor</h3>
+              <h3>John Dewey High School</h3>
               <p class="org">Four teams across City and state competitions</p>
               <ul>
                 <li>
@@ -394,85 +476,65 @@
                 </li>
               </ul>
               <div class="tags">
-                <span>Hydraulic Hydras (FTC 9384)</span><span>Leviathan (FTC 9385)</span
-                ><span>Cephalopods (FTC 8088)</span><span>Seahorse Stallions (FTC 8087)</span>
+                <span>Hydraulic Hydras (FTC 9384)</span>
+                <span>Leviathans (FTC 9385)</span>
+                <span>Cephalopods (FTC 8088)</span>
+                <span>Seahorse Stallions (FTC 8087)</span>
               </div>
             </article>
           </div>
-          <div class="job">
-            <article class="card">
-              <div class="when">September 2025 to present</div>
-              <h3>Electric Eagles (FTC 23983)</h3>
-              <p class="org">FIRST Tech Challenge mentor, rookie team</p>
-              <ul>
-                <li>
-                  Provided foundational guidance on robot design, programming and competition
-                  strategy to help them through their seasons.
-                </li>
-                <li>
-                  Started new programmers with Java basics and a first working driver-controlled
-                  program.
-                </li>
-              </ul>
-            </article>
-          </div>
+          
         </div>
         <h3 class="sub">How I teach Java and Android</h3>
         <p>
-          FTC robots run Java on Android, so I teach both together. Students learn the language in
-          small steps, then use it right away on a real robot.
+          FTC robots run Java on Android, so I teach both together, in small steps on a real robot.
         </p>
         <div class="grid">
           <article class="card">
             <h3>Java foundations</h3>
-            <p>Students start with the language itself, before touching a robot.</p>
             <ul>
-              <li>Variables, data types, conditionals and loops.</li>
-              <li>
-                Methods, classes and objects, explained with robot parts like a motor or a claw.
-              </li>
-              <li>Small exercises, and reading error messages to fix problems themselves.</li>
+              <li>Variables, loops and conditionals, then methods, classes and objects.</li>
+              <li>Small exercises and learning to read error messages.</li>
             </ul>
             <div class="tags"><span>Java</span></div>
           </article>
           <article class="card">
             <h3>Java on Android</h3>
-            <p>
-              The FTC Robot Controller is an Android app, so I show students how their code becomes
-              a running app.
-            </p>
             <ul>
-              <li>
-                Setting up Android Studio and the FTC SDK, and finding their way around the project.
-              </li>
-              <li>How Gradle builds the project and pulls in libraries.</li>
+              <li>Setting up Android Studio and the FTC SDK, and how Gradle builds the app.</li>
               <li>Deploying to the Control Hub or Robot Controller over USB and Wi-Fi.</li>
             </ul>
             <div class="tags">
-              <span>Android Studio</span><span>FTC SDK</span><span>Gradle</span>
+              <span>Android Studio</span>
+              <span>FTC SDK</span>
+              <span>Gradle</span>
             </div>
           </article>
           <article class="card">
             <h3>Controlling the robot</h3>
-            <p>Next, students turn Java into robot behavior.</p>
             <ul>
-              <li>OpModes for autonomous and driver-controlled (TeleOp) modes.</li>
-              <li>The hardware map, which links code to motors, servos and sensors.</li>
-              <li>Gamepad input and telemetry, with classes that organize each subsystem.</li>
+              <li>
+                OpModes for autonomous and TeleOp, plus the hardware map for motors, servos and
+                sensors.
+              </li>
+              <li>Gamepad input and telemetry.</li>
             </ul>
-            <div class="tags"><span>OpModes</span><span>Telemetry</span></div>
+            <div class="tags">
+              <span>OpModes</span>
+              <span>Telemetry</span>
+            </div>
           </article>
           <article class="card">
             <h3>Tuning and teamwork</h3>
-            <p>Last, we make the code reliable and easy to share.</p>
             <ul>
-              <li>PID control for smoother, more precise movement.</li>
-              <li>
-                Reusable libraries, such as my own TeaLib, so teams stop rewriting the same code.
-              </li>
-              <li>Git and GitHub, testing on the field, and reviewing each other's code.</li>
+              <li>PID control and reusable libraries like my TeaLib.</li>
+              <li>Git, GitHub and code reviews.</li>
             </ul>
-            <div class="tags"><span>PID</span><span>Git</span><span>GitHub</span></div>
+            <div class="tags">
+              <span>PID</span>
+              <span>Git</span>
+              <span>GitHub</span>
+            </div>
           </article>
         </div>
       </section>
@@ -484,14 +546,16 @@
         </p>
         <a class="big" href="mailto:mtauha9@gmail.com">mtauha9@gmail.com</a>
         <div class="btns">
-          <a class="btn" href="https://github.com/Tea505" target="_blank" rel="noopener">GitHub</a
-          ><a
+          <a class="btn" href="https://github.com/Tea505" target="_blank" rel="noopener">GitHub</a>
+          <a
             class="btn"
             href="https://www.linkedin.com/in/muhammad-tauha-63ba73282/"
             target="_blank"
             rel="noopener"
-            >LinkedIn</a
-          ><a class="btn" href="#top">Back to the surface</a>
+          >
+            LinkedIn
+          </a>
+          <a class="btn" href="#top">Back to the surface</a>
         </div>
       </section>
     </main>
