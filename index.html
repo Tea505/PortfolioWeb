@@ -1,243 +1,501 @@
-<!-- <!DOCTYPE html> 
+<!doctype html>
 <html lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Muhammad Tauha </title>
-
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/cards.css">
-        <link rel="stylesheet" href="css/projects.css">
-        <link rel="stylesheet" href="css/animations.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
-
-    <body> 
-        <div id="background"> </div>
-
-        <nav class="navbar"> 
-            <div class="navbar-container"> 
-                
-            <div class="dropdown"> 
-                <button id="dropdownBtn" class="dropbtn"> <span class="menu-text">Menu </span> ☰ </button>
-
-                <div class="dropdown-content">
-                    <a href="index.html" class="page-link"> Home </a>
-                    <a href="projects.html" class="page-link"> Projects </a>
-                    <a href="explore.html" class="page-link"> Robotics </a>
-                    <a href="GsapTest.html" class="page-link"> GSAP TEST </a>
-                </div>
-            </div>
-                <div class="social-links">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mtauha9@gmail.com&su=Let's%20Connect&body=Hi%20Tauha%2C%0A..."> Email 
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com/Tea505"> Github  <i class="fab fa-github"></i> </a>
-                    <a href="https://www.linkedin.com/in/muhammad-tauha-63ba73282/"> LinkedIn 
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-        </nav>
-
-    <main id="main">   
-
-        <div class="Title">
-        <header>  
-            <img src="assets/pfp.png" alt="pfp" title="Profile" class="pfp">
-            
-            <div class="title-text"> 
-                <h1 id="Tauha"> Muhammad Tauha </h1>
-                <h5 id="student"> Student | Developer | Robotics Enthusiast </h5>
-            </div>
-            <div class="player-wrapper">
-                <iframe 
-                    frameborder="0" 
-                    height="175" 
-                    width="100%" 
-                    title="Media player" 
-                    src="https://embed.music.apple.com/us/album/major-crimes/1540792622?i=1540793086&amp;itscg=30200&amp;itsct=music_box_player&amp;ls=1&amp;app=music&amp;mttnsubad=1540793086&amp;theme=auto" 
-                    id="embedPlayer" 
-                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" 
-                    allow="autoplay *; encrypted-media *; clipboard-write" 
-                    style="border: 0px; border-radius: 12px; width: 100%; height: 175px; max-width: 660px;">
-                </iframe>
-            </div>
-            
-        </header> 
+  <head>
+    <meta charset="utf-8" />
+    <title>Muhammad Tauha | Student &amp; Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <canvas id="bh" aria-hidden="true"></canvas>
+    <canvas id="sky" aria-hidden="true"></canvas>
+    <div id="cur"></div>
+    <div id="depth" aria-hidden="true"><i></i><b>Outer space</b></div>
+    <header>
+      <a href="#top">Muhammad Tauha</a
+      ><button
+        id="menu"
+        type="button"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="nav"
+      >
+        <span></span><span></span>
+      </button>
+      <nav id="nav">
+        <a href="#about">About</a><a href="#experience">Experience</a
+        ><a href="#education">Education</a><a href="#work">Projects</a><a href="#skills">Skills</a
+        ><a href="#volunteering">Volunteering</a><a href="#mentorship">Mentorship</a
+        ><a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="top">
+      <section>
+        <h1 id="name">Muhammad<br />Tauha</h1>
+        <p class="lead">
+          Student, developer and robotics enthusiast based in New York City.
+          <span class="hm"
+            >Move your cursor to bend the light, click to feed it a star, drag to change the viewing
+            angle.
+        </p>
+        <div class="btns">
+          <a class="btn" href="#work">See my work</a><a class="btn" href="#contact">Get in touch</a>
         </div>
-
-         <h3> About Me </h3>
-
-            <section class="aboutme-section"> </section> 
-                <div class="aboutme-card"> 
-                    <p>  Hi, I'm currently a student at Borough of Manhattan Community College, expected to graduate in 
-                    Spring of 2027. I'm a passionate student who loves robotics and writing clean, reusable code.
-                    I enjoy working on projects that challenge my skills and allow me to learn new technologies. </p>
-                </div>
-
-            <section id="work-section"> 
-                <h3> Work Experience </h3>
-                <div class="work-container"> 
-
-                <div class="work-card">
-                    <div class="work-header"> 
-                        <img src="assets/artbeyondsight.png" alt="Company Logo" class="card-logo">
-                            <div class="card-header-text">
-                                <h4> Drupal Developer | UX/UI Designer </h4>
-                                <h6> Art Beyond Sight | New York City, NY </h6>
-                                <span class="card-dates"> February 2026 - May 2026 </span>
-                            </div>
-                        </div>
-                    <div class="card-body">
-                        <ul>  <!-- Should switch up this description -- it doesnt like suit my taste 
-                                    Defo change this -->
-                            <li> Drupal developer focused on building fast, scalable, and user-friendly websites. </li>
-                            <li> Experienced in customizing themes and developing modules. </li>
-                            <li> Skilled in creating clean, responsive designs. </li>    
-                            <li> Focused on performance optimization and site security. </li>
-                            <li> Committed to writing maintainable and efficient code </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="work-card"> 
-                    <div class="work-header"> 
-                        <img src="assets/seamlessshifts.png" alt="Company Logo" class="card-logo">
-                            <div class="card-header-text">
-                                <h4> IT Specialist </h4>
-                                <h6> Seamless shifts | New York City, NY </h6>
-                            <span class="card-dates"> July 2024 - Present </span>
-                            </div>
-                        </div>
-                    <div class="card-body">
-                        <ul> 
-                            <li> Configured and maintained 30+ workstation hardware, including structured wiring, cable management, and peripheral setup. </li>
-                            <li> Troubleshot and resolved network connectivity issues, improving system reliability and reducing downtime. </li>
-                            <li> Deployed and supported end-user hardware, such as dual-monitor configurations, docking stations, and input devices, ensuring seamless integration with enterprise systems. </li>
-                        </ul>
-                    </div>
-                </div>
+      </section>
+      <section id="about">
+        <h2>I build things that pull people in.</h2>
+        <p>
+          I'm a student at Borough of Manhattan Community College, graduating in Spring 2027, and I
+          love robotics and writing clean, reusable code.
+        </p>
+        <p>
+          I enjoy projects that challenge my skills and let me learn new technologies, from
+          competition robots to websites to IT support.
+        </p>
+        <div class="stats">
+          <div><strong data-n="1157">0</strong>workstations configured</div>
+          <div><strong data-n="16">0</strong>robotics projects</div>
+          <div><strong data-n="3">0</strong>years in IT</div>
+        </div>
+      </section>
+      <section id="experience">
+        <h2>Where I've worked</h2>
+        <div class="tl">
+          <div class="job">
+            <article class="card">
+              <div class="when">February 2026 to May 2026</div>
+              <h3>Drupal Developer | Website Design</h3>
+              <p class="org">Art Beyond Sight, New York City, NY</p>
+              <ul>
+                <li>Build fast, scalable and user-friendly websites with Drupal.</li>
+                <li>Customize themes and develop modules.</li>
+                <li>
+                  Create clean, responsive designs with a focus on performance and site security.
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="job">
+            <article class="card">
+              <div class="when">July 2024 to present</div>
+              <h3>IT Specialist</h3>
+              <p class="org">Seamless Shifts, New York City, NY</p>
+              <ul>
+                <li>
+                  Configured and maintained 30+ workstations, including structured wiring, cable
+                  management and peripheral setup.
+                </li>
+                <li>
+                  Troubleshot network connectivity issues, improving reliability and reducing
+                  downtime.
+                </li>
+                <li>
+                  Deployed and supported dual-monitor setups, docking stations and input devices,
+                  integrated with enterprise systems.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <div class="tl">
+          <div class="job">
+            <article class="card">
+              <div class="when">2025 to 2027</div>
+              <h3>Associate of Science in Computer Science</h3>
+              <p class="org">Borough of Manhattan Community College</p>
+              <ul>
+                <li>GPA: 4.0 </li>
+                <li>Expected graduation: Spring 2027.</li>
+                <li> Honor Roll Student</li>
+                <li> Fall 2025 - 2026 Dean's List award.</li></li>
+              </ul>
+              <div class="tags">
+                <span>CSC 231 Discrete Structures and Applications to Computer Science</span><span>215 Fundamentals of Computer Science</span
+                ><span>CSC 111 Programming &amp; C++</span> <span>CSC 231 Advancded Programming Techniques &amp; C++</span> <span>MAT 301 Calculus I</span
+                ><span>MAT 302 Calculus II</span>
+              </div>
+            </article>
+          </div>
+          <div class="job">
+            <article class="card">
+              <div class="when">2020 to 2024</div>
+              <h3>High School Diploma</h3>
+              <p class="org">John Dewey High School</p>
+              <ul>
+                <li>GPA: 3.5.</li>
+                <li>Received a certificate for Excellence in Robotics Programming and Coding.</li>
+              </ul>
+              <div class="tags">
+                <span>Intro to Robotics</span><span>Advanced Robotics</span
+                ><span>Robotics Engineering</span><span>AP Physics</span
+                ><span>AP Computer Science (Java)</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="work">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>TeaLib</h3>
+            <p>
+              A library that simplifies common tasks and provides utility functions for developers
+              in FIRST Tech Challenge.
+            </p>
+            <div class="tags"><span>FTC</span><span>Library</span><span>Java</span></div>
+            <a class="more" href="https://github.com/Tea505/TeaLib" target="_blank" rel="noopener"
+              >View on GitHub</a
+            >
+          </article>
+          <article class="card">
+            <h3>2D Swerve Simulator</h3>
+            <p>
+              A lightweight simulator that visualizes 2D swerve drive motion in Python, ideal for
+              testing control logic and learning kinematics.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>Simulation</span><span>Kinematics</span>
             </div>
-
-            <div class="work-card"> 
-                <div class="work-header"> 
-                    <img src="assets/homedepot.jpg" alt="Company Logo" class="card-logo">
-                        <div class="card-header-text">
-                            <h4> Sales Associate | Reach Driver </h4>
-                            <h6> Home Depot | Brooklyn, NY </h6>
-                        <span class="card-dates"> August 2024 - Present </span>
-                        </div>
-                    </div>
-                <div class="card-body">
-                    <ul> 
-                        <li> Maintain up-to-date knowledge of product offerings, promotions, and department-specific details to help customers make informed decisions.</li>
-                        <li> Monitor and manage inventory levels by restocking, organizing, and assisting with inventory checks. </li>
-                        <li> Work collaboratively with other associates to achieve sales goals and maintain a positive shopping environment. </li>
-                        <li> Fully licensed to operate the Reach machine to transport and move around merchandise. </li>
-                    </ul>
-                </div>
+            <a
+              class="more"
+              href="https://github.com/Tea505/SwervePYsim"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub</a
+            >
+          </article>
+          <article class="card">
+            <h3>FTC-9384 CenterStage</h3>
+            <p>
+              Official code for Team 9384 Hydraulic Hydras' robot for CenterStage in FIRST Tech
+              Challenge.
+            </p>
+            <div class="tags"><span>FTC</span><span>Robotics</span><span>Java</span></div>
+            <a
+              class="more"
+              href="https://github.com/Tea505/FTC-9384-CenterStage"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub</a
+            >
+          </article>
+          <article class="card">
+            <h3>FTC-8088 Into The Deep</h3>
+            <p>
+              Official code for Team 8088 Cephalopods' robot for Into The Deep in FIRST Tech
+              Challenge.
+            </p>
+            <div class="tags"><span>FTC</span><span>Robotics</span><span>Java</span></div>
+            <div class="tags"><span>FTC</span><span>Robotics</span></div>
+            <a
+              class="more"
+              href="https://github.com/Tea505/FTC-8088-IntoTheDeep"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub</a
+            >
+          </article>
+          <article class="card">
+            <h3>Project Access for All</h3>
+            <p>
+              An open-source national platform making arts and culture accessible to all, with a
+              community calendar of accessible events, an organization directory and news. I
+              contributed to building this website during my internship at Art Beyond Sight.
+            </p>
+            <div class="tags">
+              <span>Drupal</span><span>Web development</span><span>Accessibility</span>
             </div>
-            
-            </section>
-
-            <div class="education-header">  
-                <h3> Education </h3>
+            <a
+              class="more"
+              href="https://www.projectaccessforall.org/"
+              target="_blank"
+              rel="noopener"
+              >Visit the website</a
+            >
+          </article>
+            <article class="card">
+            <h3>Project Astra</h3>
+            <p>
+               A 3D modeled game I'm currently developing using GDScript and C++ in Godot 4.7.
+            </p>
+            <div class="tags">
+              <span>GDScript</span><span>GDShader</span><span>Godot</span><span>Blender</span><span>Git</span><span>C++</span>
             </div>
-            <div class="education-section"> 
-                <div class="education-card">
-                    <div class="education-info">
-                    <div class="work-header"> 
-                        <img src="assets/bmcc-logo.jpg" alt="BMCC" class="card-logo">
-                        <div class="card-header-text">
-                            <h4> Associate of Science in Computer Science </h4>
-                            <h6> Borough Of Manhattan Community College | New York, NY </h6>
-                                <span class="dates" style="color: #cfc9c9; font-size: 0.85rem;"> August 2025 -  May 2027 </span>
-                                <span class="GPA"> GPA: 4.0 </span>
-                            </div>
-                        </div>
-                        <div class="awards">
-                            <p><strong>Awards:</strong> <br> Fall 2025 Dean's List  <br> Spring 2026 Dean's List </p>
-                        </div>
-                    </div>
-
-                <div class="courses-side">
-                    <h4 id ="RC"> Related Courses </h4>
-                        <ul>
-                            <li> CSC 111 - Introduction to Programming and C++ </li>    
-                            <li> CSC 211 - Advanced Programming Techniques of C++ </li>
-                            <li> CSC 231 - Discrete Structures and Applications to Computer Science </li>
-                            <li> MAT 206 - Precalculus </li>
-                            <li> MAT 301 - Analytic Geometry and Calculus I </li>
-                            <li> MAT 302 - Analytic Geometry and Calculus II </li>
-                            <li> PHY 215 - University Physics I </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- <div class="education-card">
-                    <div class="education-info">
-                    <div class="work-header"> 
-                        <img src="assets/columbiaUni.png" alt="Columbia University" class="card-logo">
-                        <div class="card-header-text">
-                            <h4> Bachelors of Science in Computer Science </h4>
-                            <h6> Columbia University | New York, NY </h6>
-                                <span class="dates" style="color: #cfc9c9; font-size: 0.85rem;"> August 2027 -  May 2029 </span>
-                                <span class="GPA"> GPA: TBD </span>
-                            </div>
-                        </div>
-                        <div class="awards">
-                            <p><strong>Awards:</strong> <br>   <br>  </p>
-                        </div> 
-                    </div>
-
-                <div class="courses-side">
-                    <h4 id ="RC"> Related Courses </h4>
-                        <ul>
-                            
-                        </ul>
-                    </div>
-                </div> -->
+          </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h2>My orbit</h2>
+        <p>
+          My skills orbit around a core stack of technologies and tools I use regularly.
+        </p>
+        <div id="orbit">
+          <div class="core">Core<br />stack</div>
+        </div>
+      </section>
+      <section id="volunteering">
+        <h2>Volunteering</h2>
+        <p>
+          I've volunteered with NYC FIRST since August 2020, supporting official FIRST Tech
+          Challenge events in a range of technical and event roles.
+        </p>
+        <div class="tl">
+          <div class="job">
+            <article class="card">
+              <div class="when">September 2025 to present</div>
+              <h3>FIRST Technical Advisor</h3>
+              <p class="org">NYC FIRST</p>
+              <ul>
+                <li>
+                  Lead technical operations at official FIRST Robotics events, keeping safety,
+                  gameplay and AV setups within FIRST HQ standards.
+                </li>
+                <li>
+                  Manage deployment, calibration and teardown of the official FTC field with field
+                  assistants and supervisors.
+                </li>
+                <li>
+                  Diagnose robot communication, control system and field issues in real time, and
+                  help referees and scorekeepers validate match data.
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="job">
+            <article class="card">
+              <div class="when">September 2025 to present</div>
+              <h3>Lead Robot Inspector</h3>
+              <p class="org">NYC FIRST</p>
+              <ul>
+                <li>
+                  Lead the robot inspection team at official FIRST events, coordinating volunteer
+                  inspectors and keeping inspections consistent.
+                </li>
+                <li>
+                  Make final calls on rule questions and help teams fix compliance issues so they
+                  can compete.
+                </li>
+                <li>Train newer inspectors on safety, size and weight requirements.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="job">
+            <article class="card">
+              <div class="when">September 2023 to present</div>
+              <h3>Robot Inspector</h3>
+              <p class="org">NYC FIRST</p>
+              <ul>
+                <li>
+                  Inspect robots at official events for safety, design and gameplay compliance.
+                </li>
+                <li>
+                  Check size, weight and component rules, and give teams clear feedback on any
+                  changes needed.
+                </li>
+                <li>
+                  Assess moving parts and electrical systems for safety, and keep accurate
+                  inspection records.
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="job">
+            <article class="card">
+              <div class="when">September 2023 to August 2025</div>
+              <h3>FIRST Technical Advisor Assistant</h3>
+              <p class="org">NYC FIRST</p>
+              <ul>
+                <li>
+                  Supported the FTA in configuring and maintaining field electronics, network
+                  infrastructure and control systems.
+                </li>
+                <li>
+                  Troubleshot robot-to-field communication so teams stayed connected during matches.
+                </li>
+                <li>Guided teams through debugging, firmware updates and hardware inspections.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="job">
+            <article class="card">
+              <div class="when">September 2025 to March 2025</div>
+              <h3>Referee</h3>
+              <p class="org">NYC FIRST</p>
+              <ul>
+                <li>Enforce FTC game rules during matches to keep competition fair and safe.</li>
+                <li>
+                  Work with scorekeepers to confirm match results and resolve gameplay questions.
+                </li>
+                <li>Communicate rulings clearly to teams and event staff.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="job">
+            <article class="card">
+              <div class="when">September 2023 to December 2023</div>
+              <h3>Master of Ceremonies</h3>
+              <p class="org">NYC FIRST</p>
+              <ul>
+                <li>
+                  Served as MC for the NYC FIRST FTC Qualifiers, keeping the audience engaged and
+                  the atmosphere lively.
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="job">
+            <article class="card">
+              <div class="when">September 2022 to September 2023</div>
+              <h3>Queuer</h3>
+              <p class="org">NYC FIRST</p>
+              <ul>
+                <li>
+                  Organized the flow of teams to the competition field, keeping transitions timely
+                  and orderly.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="mentorship">
+        <h2>Mentorship</h2>
+        <p>
+          I mentor FIRST Tech Challenge (FTC) teams, guiding students through designing, building
+          and programming competition robots.
+        </p>
+        <div class="tl">
+          <div class="job">
+            <article class="card">
+              <div class="when">September 2024 to present</div>
+              <h3>FIRST Tech Challenge Mentor</h3>
+              <p class="org">Four teams across City and state competitions</p>
+              <ul>
+                <li>
+                  Guided students through the design, build and programming process to develop
+                  competitive robots.
+                </li>
+                <li>
+                  Taught Java from the ground up, then showed students how to apply it to a real
+                  robot using the FTC SDK and Android Studio.
+                </li>
+                <li>
+                  Helped students debug with telemetry and logs, manage code with Git and GitHub,
+                  and work as a programming team.
+                </li>
+              </ul>
+              <div class="tags">
+                <span>Hydraulic Hydras (FTC 9384)</span><span>Leviathan (FTC 9385)</span
+                ><span>Cephalopods (FTC 8088)</span><span>Seahorse Stallions (FTC 8087)</span>
+              </div>
+            </article>
+          </div>
+          <div class="job">
+            <article class="card">
+              <div class="when">September 2025 to present</div>
+              <h3>Electric Eagles (FTC 23983)</h3>
+              <p class="org">FIRST Tech Challenge mentor, rookie team</p>
+              <ul>
+                <li>
+                  Provided foundational guidance on robot design, programming and competition
+                  strategy to help them through their seasons.
+                </li>
+                <li>
+                  Started new programmers with Java basics and a first working driver-controlled
+                  program.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+        <h3 class="sub">How I teach Java and Android</h3>
+        <p>
+          FTC robots run Java on Android, so I teach both together. Students learn the language in
+          small steps, then use it right away on a real robot.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <h3>Java foundations</h3>
+            <p>Students start with the language itself, before touching a robot.</p>
+            <ul>
+              <li>Variables, data types, conditionals and loops.</li>
+              <li>
+                Methods, classes and objects, explained with robot parts like a motor or a claw.
+              </li>
+              <li>Small exercises, and reading error messages to fix problems themselves.</li>
+            </ul>
+            <div class="tags"><span>Java</span></div>
+          </article>
+          <article class="card">
+            <h3>Java on Android</h3>
+            <p>
+              The FTC Robot Controller is an Android app, so I show students how their code becomes
+              a running app.
+            </p>
+            <ul>
+              <li>
+                Setting up Android Studio and the FTC SDK, and finding their way around the project.
+              </li>
+              <li>How Gradle builds the project and pulls in libraries.</li>
+              <li>Deploying to the Control Hub or Robot Controller over USB and Wi-Fi.</li>
+            </ul>
+            <div class="tags">
+              <span>Android Studio</span><span>FTC SDK</span><span>Gradle</span>
             </div>
-            
-            <h3> Skills </h3> 
-            <section id="skills-section"> 
-                <div class="skills-card">
-                    <div class="imageRow">
-                    <div class="languages"> <!-- TODO: Add more language icons, add a title saying "Programming Languages "-->
-                        <img src="assets/languages/css.png" alt="CSS" title="CSS">
-                        <img src="assets/languages/html.png" alt="HTML" title="HTML">
-                        <img src="assets/languages/java.png" alt="Java" title="Java">
-                        <img src="assets/languages/javascript.png" alt="JavaScript" title="JavaScript">
-                        <img src="assets/languages/python.png" alt="Python" title="Python">
-                        <img src="assets/languages/kotlin.png" alt="Kotlin" title="Kotlin">
-                        <img src="assets/languages/cPlusPlus.png" alt="C++" title="C++">    
-                    </div>
-
-                    <div class="spacer"> </div>
-
-                    <div class="tools">  <!-- TODO: Add more tool icons, add a title saying "Development Tools "-->
-                        <img src="assets/IDE/intellij.jpg" alt="IntelliJ IDEA" title="IntelliJ IDEA">
-                        <img src="assets/IDE/androidstudio.png" alt="Android Studio" title="Android Studio">
-                        <img src="assets/IDE/vscode.jpg" alt="VS Code" title="Visual Studio Code">
-                        <img src="assets/IDE/visualstudio.png" alt="VS" title="Visual Studio">
-                        <img src="assets/IDE/git.png" alt="Git" title="Git">
-                        <img src="assets/IDE/github.png" alt="GitHub" title="GitHub">
-                    </div>  
-                </div>
-            </section>
-
-        </main>
-    </body>
-    
-    <footer>
-        <p>&copy; 2026 Muhammad Tauha</p>
-    </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/animations.js"></script>
-</html> -->
+          </article>
+          <article class="card">
+            <h3>Controlling the robot</h3>
+            <p>Next, students turn Java into robot behavior.</p>
+            <ul>
+              <li>OpModes for autonomous and driver-controlled (TeleOp) modes.</li>
+              <li>The hardware map, which links code to motors, servos and sensors.</li>
+              <li>Gamepad input and telemetry, with classes that organize each subsystem.</li>
+            </ul>
+            <div class="tags"><span>OpModes</span><span>Telemetry</span></div>
+          </article>
+          <article class="card">
+            <h3>Tuning and teamwork</h3>
+            <p>Last, we make the code reliable and easy to share.</p>
+            <ul>
+              <li>PID control for smoother, more precise movement.</li>
+              <li>
+                Reusable libraries, such as my own TeaLib, so teams stop rewriting the same code.
+              </li>
+              <li>Git and GitHub, testing on the field, and reviewing each other's code.</li>
+            </ul>
+            <div class="tags"><span>PID</span><span>Git</span><span>GitHub</span></div>
+          </article>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Let's connect.</h2>
+        <p>
+          I'm open to internships, collaborations and robotics projects. Send me a message and I'll
+          get back to you soon.
+        </p>
+        <a class="big" href="mailto:mtauha9@gmail.com">mtauha9@gmail.com</a>
+        <div class="btns">
+          <a class="btn" href="https://github.com/Tea505" target="_blank" rel="noopener">GitHub</a
+          ><a
+            class="btn"
+            href="https://www.linkedin.com/in/muhammad-tauha-63ba73282/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          ><a class="btn" href="#top">Back to the surface</a>
+        </div>
+      </section>
+    </main>
+    <footer>© 2026 Muhammad Tauha</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
